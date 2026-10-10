@@ -35,6 +35,7 @@
 
   /* ------------------------------------------------------- header state */
   var header = document.querySelector('.header');
+  var scrollCue = document.querySelector('.hero__scroll');
   if (header) {
     var scrolled = false;
     var onScroll = function () {
@@ -42,6 +43,11 @@
       if (now !== scrolled) {            // write only on change
         scrolled = now;
         header.classList.toggle('is-scrolled', now);
+      }
+      // On short screens, let the cue enter view before dismissing it.
+      if (scrollCue) {
+        var cueEnd = scrollCue.parentElement.offsetTop + scrollCue.parentElement.offsetHeight;
+        scrollCue.classList.toggle('is-dismissed', window.scrollY > Math.max(48, cueEnd - window.innerHeight + 48));
       }
     };
     window.addEventListener('scroll', onScroll, { passive: true });
