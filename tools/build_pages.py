@@ -257,7 +257,7 @@ HOME = """
     <div class="wrap">
       <p class="eyebrow">Independent School &nbsp;·&nbsp; Gqeberha, Eastern Cape</p>
       <h1>An education that builds minds, bodies and spirits.</h1>
-      <p class="hero__lede">EduPlanet is a registered independent school offering Grade&nbsp;RR to Grade&nbsp;12 &mdash; high-quality teaching, healthy discipline and strong moral values, in Struandale since 2016.</p>
+      <p class="hero__lede">EduPlanet is a registered independent school offering Grade&nbsp;RR to Grade&nbsp;12 high-quality teaching, healthy discipline and strong moral values, in Struandale since 2016.</p>
       <div class="btn-row">
         <a class="btn btn--primary" href="{form}" target="_blank" rel="noopener">Apply Now</a>
         <a class="btn btn--on-dark" href="academics.html">Explore academics</a>

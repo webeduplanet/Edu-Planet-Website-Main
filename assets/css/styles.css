@@ -66,6 +66,7 @@
   --wrap:    1200px;
   --gutter:  clamp(20px, 5vw, 64px);
   --section: clamp(64px, 9vw, 132px);
+  --header-height: 74px;
 
   /* Motion */
   --ease:      cubic-bezier(.22, .61, .36, 1);
@@ -251,7 +252,7 @@ a:hover { color: var(--brand-700); }
 }
 .header__bar {
   display: flex; align-items: center; gap: 24px;
-  min-height: 74px;
+  min-height: var(--header-height);
   transition: min-height var(--dur) var(--ease);
 }
 .header.is-scrolled .header__bar { min-height: 62px; }
@@ -321,12 +322,12 @@ a:hover { color: var(--brand-700); }
   .nav-toggle { display: inline-flex; }
   .header__cta .btn--apply { display: none; }
   .nav {
-    position: fixed; inset: 74px 0 auto 0;
+    position: fixed; inset: var(--header-height) 0 auto 0;
     flex-direction: column; align-items: stretch; gap: 0;
     background: var(--navy);
     padding: 12px var(--gutter) 28px;
     border-bottom: 1px solid rgba(255,255,255,.12);
-    max-height: calc(100dvh - 74px);
+    max-height: calc(100dvh - var(--header-height));
     overflow-y: auto;
     transform: translateY(-8px);
     opacity: 0; visibility: hidden;
@@ -344,7 +345,10 @@ a:hover { color: var(--brand-700); }
   isolation: isolate;
   background: var(--navy);
   color: #fff;
-  min-height: clamp(560px, 88vh, 900px);
+  /* Fill the first screen below the header, including its 1px border.
+     Keep this a minimum so wrapped content can grow on smaller screens. */
+  min-height: max(560px, calc(100vh - var(--header-height) - 1px));
+  min-height: max(560px, calc(100svh - var(--header-height) - 1px));
   display: flex; align-items: flex-end;
   overflow: hidden;
 }
@@ -779,7 +783,10 @@ a:hover { color: var(--brand-700); }
 /* Short screens: the hero meta strip has no room. */
 @media (max-height: 560px) and (orientation: landscape) {
   .hero__meta { display: none; }
-  .hero { min-height: 480px; }
+  .hero {
+    min-height: max(480px, calc(100vh - var(--header-height) - 1px));
+    min-height: max(480px, calc(100svh - var(--header-height) - 1px));
+  }
 }
 
 @media print {
