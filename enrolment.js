@@ -47,7 +47,7 @@ async function deliver(kind,data,signal){
 }
 async function openFees(){await ready;const connected=config?.feeEnquiryMode==='connected'&&config.feeEnquiryEndpoint;const activeEmail=config?.feeEnquiryMode==='email'&&config.emailForms?.activated;const collect=Boolean(connected||activeEmail);form.hidden=!collect;reveal.hidden=collect;if(!collect)dialog.classList.add('fees-dialog--schedule');dialog.showModal();}
 for(const button of document.querySelectorAll('[data-open-fees]'))button.addEventListener('click',openFees);
-if(new URL(location.href).searchParams.get('view')==='fees')openFees();
+if(new URL(location.href).searchParams.get('view')==='fees'&&!location.hash)location.hash='fees';
 phone.addEventListener('input',()=>phone.setCustomValidity(''));email.addEventListener('input',()=>email.setCustomValidity(''));
 form.addEventListener('submit',async event=>{
  event.preventDefault();if(pending)return;
