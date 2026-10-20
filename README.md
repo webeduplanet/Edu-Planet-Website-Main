@@ -2,7 +2,7 @@
 
 This branch contains the reviewed ten-page website for Grade R–12. The four phase pages, selected photographs, 2027 fee selector, admissions updates and aligned logo are included at the repository root.
 
-**Review status:** public review banners and demonstration notices have been removed. Noindex metadata remains. The fee enquiry and scholarship forms support temporary email delivery; the owner has confirmed inbox activation and email mode is enabled for info@eduplanet.co.za. Every fee entry route leads through the included benefits and a required inline contact form before opening the fee popup. This branch is not ready to replace production until those connections and production cleanup are completed. See [release notes](tools/publish-focused/README.md).
+**Review status:** public review banners and demonstration notices have been removed. Noindex metadata remains. The fee enquiry and scholarship forms support temporary email delivery; the owner has confirmed inbox activation and email mode is enabled for info@eduplanet.co.za. Every fee entry route leads through the included benefits and a required contact-details popup before opening the fee popup. This branch is not ready to replace production until those connections and production cleanup are completed. See [release notes](tools/publish-focused/README.md).
 
 ## Pages
 

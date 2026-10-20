@@ -1,5 +1,5 @@
 {
-  "status": "Required contact-to-fee-popup flow implemented; owner confirmed email activation; actual delivery remains unverified",
+  "status": "Required contact popup precedes fee popup; owner confirmed email activation; delivery remains unverified",
   "source": "Reviewed focused local preview",
   "pages": 10,
   "gradeRange": "R–12",

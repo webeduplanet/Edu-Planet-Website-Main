@@ -132,10 +132,6 @@
 #scholarship-confirmation h3 { font-size:1.35rem; }
 #scholarship-dialog>p { font-size:.92rem; line-height:1.6; }
 
-/* Contact details precede the fee popup. */
-.fee-contact-section { max-width:620px; margin:32px 0 0; padding:clamp(22px,4vw,36px); border:1px solid var(--hairline); border-radius:8px; background:#fff; scroll-margin-top:calc(var(--header-height) + 24px); }
-.fee-contact-section[hidden] { display:none!important; }
-.fee-contact-section h3 { font-size:clamp(1.4rem,2.4vw,1.8rem); margin:0 0 18px; }
-.fee-contact-section form>.btn { width:100%; margin-top:4px; }
-.fee-contact-section .fees-preview-note { margin-bottom:22px; }
-.fee-contact-section [hidden] { display:none!important; }
+/* Contact details open before the separate fee popup. */
+.fee-contact-dialog[open] { width:min(560px,calc(100% - 32px)); max-width:560px; }
+.fee-contact-dialog h2 { font-size:clamp(1.5rem,3vw,2rem); line-height:1.2; }

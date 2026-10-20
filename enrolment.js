@@ -2,7 +2,7 @@
 const titles={FAQ_URL:'Full FAQ',APPLICATION_FORM_URL:'Application form',APPLICATION_PDF_URL:'PDF application form',VISIT_CALENDAR_URL:'School visit booking'};
 const dialog=document.getElementById('fees-dialog'),form=document.getElementById('fees-access-form'),reveal=document.getElementById('fees-reveal'),phone=document.getElementById('fees-contact-number'),email=document.getElementById('fees-email'),status=document.getElementById('fee-enquiry-status'),submit=form.querySelector('[type="submit"]');
 let config,pending=false,controller,generation=0,lastContact=null;
-const contactSection=document.getElementById('fee-enquiry');
+const contactDialog=document.getElementById('fee-enquiry');
 const gradeSelect=document.getElementById('fee-grade-select');
 function updateFeeGrade(){
  if(!gradeSelect)return;
@@ -46,7 +46,7 @@ async function deliver(kind,data,signal){
  if(!response.ok||!accepted)throw new Error(response.status===429?'Please wait a few minutes before trying again.':'We could not confirm your enquiry was sent. Please try again or contact the accounts office.');
  return {preview:false};
 }
-async function openFees(){await ready;contactSection.hidden=false;form.hidden=false;reveal.hidden=true;for(const button of document.querySelectorAll('[data-open-fees]'))button.setAttribute('aria-expanded','true');contactSection.scrollIntoView({block:'start'});document.getElementById('fees-parent-name').focus({preventScroll:true});}
+async function openFees(){await ready;form.hidden=false;reveal.hidden=true;contactDialog.showModal();document.getElementById('fees-parent-name').focus();}
 for(const button of document.querySelectorAll('[data-open-fees]'))button.addEventListener('click',openFees);
 if(new URL(location.href).searchParams.get('view')==='fees'&&!location.hash)location.hash='fees';
 phone.addEventListener('input',()=>phone.setCustomValidity(''));email.addEventListener('input',()=>email.setCustomValidity(''));
@@ -59,11 +59,12 @@ form.addEventListener('submit',async event=>{
  try{
   submit.textContent='Sending…';
   await deliver('fees',data,controller.signal);
-  if(contactSection.hidden||attempt!==generation)return;
-  lastContact=data;form.reset();setMessage(status,'');dialog.classList.add('fees-dialog--schedule');reveal.hidden=false;dialog.showModal();document.getElementById('fees-reveal-title').focus();
- }catch(error){if(!contactSection.hidden&&attempt===generation)setMessage(status,error.name==='AbortError'?'We could not confirm your enquiry was sent. Please try again or contact the accounts office.':error.message);}
+  if(!contactDialog.open||attempt!==generation)return;
+  lastContact=data;setMessage(status,'');contactDialog.close();dialog.classList.add('fees-dialog--schedule');reveal.hidden=false;dialog.showModal();document.getElementById('fees-reveal-title').focus();
+ }catch(error){if(contactDialog.open&&attempt===generation)setMessage(status,error.name==='AbortError'?'We could not confirm your enquiry was sent. Please try again or contact the accounts office.':error.message);}
  finally{clearTimeout(timer);pending=false;submit.disabled=false;submit.textContent='Show fees';form.removeAttribute('aria-busy');controller=null;}
 });
+contactDialog.addEventListener('close',()=>{generation++;controller?.abort();form.reset();phone.setCustomValidity('');email.setCustomValidity('');setMessage(status,'');});
 dialog.addEventListener('cancel',event=>{if(pending)event.preventDefault();});
 dialog.addEventListener('close',()=>{generation++;controller?.abort();lastContact=null;form.reset();if(gradeSelect){gradeSelect.value='';updateFeeGrade();}dialog.classList.remove('fees-dialog--schedule');phone.setCustomValidity('');email.setCustomValidity('');form.hidden=false;reveal.hidden=true;setMessage(status,'');});
 const scholarshipDialog=document.getElementById('scholarship-dialog');
@@ -87,10 +88,6 @@ if(scholarshipDialog){
  scholarshipDialog.addEventListener('close',()=>{sequence++;abort?.abort();sf.reset();sp.setCustomValidity('');se.setCustomValidity('');sf.hidden=false;confirmation.hidden=true;setMessage(ss,'');});
 }
 await ready;if(!config)return;
-if(config.feeEnquiryMode==='email'){
- const message='Your details are processed by FormSubmit and emailed to '+config.emailForms.recipient+' for follow-up.';
- for(const id of ['fees-preview-note','scholarship-privacy-note']){const node=document.getElementById(id);if(node){node.textContent=message;node.hidden=false;}}
-}else if(config.feeEnquiryMode==='connected'){const note=document.getElementById('fees-preview-note');note.textContent='Your name, contact number and email will be sent to EduPlanet’s enquiries spreadsheet so our accounts office can follow up.';note.hidden=false;}
 document.getElementById('deadline-notice').textContent=config.deadlineNotice;document.getElementById('late-application-notice').textContent=config.lateApplicationNotice;
 for(const button of document.querySelectorAll('[data-enrolment-link]')){const key=button.dataset.enrolmentLink,url=config.links[key];let destination;try{const parsed=new URL(url);if(['https:','http:'].includes(parsed.protocol))destination=parsed.href;}catch{}
  if(destination){const a=document.createElement('a');a.className=button.className;a.innerHTML=button.innerHTML;a.href=destination;button.replaceWith(a);}

@@ -27,7 +27,7 @@ setTimeout(function () {
      block rendering or to fail on a filtered network. -->
 <link rel="preload" href="/assets/fonts/figtree-variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/styles.css">
-<meta name="robots" content="noindex, nofollow"><link rel="stylesheet" href="preview.css?v=253f804f46"><link rel="stylesheet" href="focused.css?v=f7c0d09dbe"><link rel="stylesheet" href="enrolment.css?v=ae7a770b55"></head>
+<meta name="robots" content="noindex, nofollow"><link rel="stylesheet" href="preview.css?v=253f804f46"><link rel="stylesheet" href="focused.css?v=f7c0d09dbe"><link rel="stylesheet" href="enrolment.css?v=ea8461720f"></head>
 <body class="public-site copy-preview focused-preview enrolment-page">
 <svg class="sprite" aria-hidden="true" focusable="false"><symbol id="ep-mark" viewBox="0 0 351 369"><g transform="translate(0.000000,369.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
     <path d="M3110 3684 c0 -3 10 -37 21 -76 42 -137 16 -202 -106 -265 -41 -21
@@ -135,7 +135,10 @@ m301 -153 c58 -22 74 -119 28 -171 -24 -27 -36 -32 -95 -36 l-67 -6 0 112 0
 <article><h3>Safety &amp; Security</h3><ul><li><strong>24/7 Security:</strong> Security measures to protect our campus.</li><li><strong>Controlled Access:</strong> Fingerprint access control and perimeter security fencing.</li><li><strong>CCTV Monitoring:</strong> Cameras throughout the campus and classrooms.</li><li><strong>Supervised Aftercare:</strong> Safe and affordable supervised aftercare options available.</li></ul></article>
 </div>
 <div class="benefits-reassurance"><h3>Less to worry about. More to look forward to.</h3><ul><li>Fewer unexpected expenses</li><li>Less paperwork and fewer separate payments</li><li>Greater convenience for parents</li><li>More opportunities for learners</li><li>Peace of mind in a safe, supportive environment</li></ul></div>
-<div class="enrolment-actions"><button type="button" class="btn btn--primary" data-open-fees aria-controls="fee-enquiry" aria-expanded="false">View fees</button><button type="button" class="btn btn--ghost" data-enrolment-link="APPLICATION_FORM_URL">Continue my application</button><button type="button" class="text-link" data-enrolment-link="FAQ_URL">Read the full FAQ <span aria-hidden="true">↗</span></button></div><p class="benefits-signoff"><strong>EduPlanet Independent School</strong><br><em>Belong. Grow. Make a Difference.</em></p><section class="fee-contact-section" id="fee-enquiry" aria-labelledby="fee-contact-title" hidden><p class="eyebrow">Your next step</p><h3 id="fee-contact-title">Your contact details</h3><p id="fees-preview-note" class="fees-preview-note" hidden></p><form id="fees-access-form" method="post">
+<div class="enrolment-actions"><button type="button" class="btn btn--primary" data-open-fees aria-controls="fee-enquiry" aria-haspopup="dialog">View fees</button><button type="button" class="btn btn--ghost" data-enrolment-link="APPLICATION_FORM_URL">Continue my application</button><button type="button" class="text-link" data-enrolment-link="FAQ_URL">Read the full FAQ <span aria-hidden="true">↗</span></button></div><p class="benefits-signoff"><strong>EduPlanet Independent School</strong><br><em>Belong. Grow. Make a Difference.</em></p>
+</div></div></section>
+
+<dialog class="preview-dialog fees-dialog fee-contact-dialog" id="fee-enquiry" aria-labelledby="fee-contact-title"><div class="preview-dialog__top"><p class="eyebrow">Your next step</p><button type="button" data-close-dialog aria-label="Close contact details">×</button></div><h2 id="fee-contact-title">Your contact details</h2><form id="fees-access-form" method="post">
   <p>Enter your name, contact number and email address to view the 2027 fees.</p>
   <div class="fees-field"><label for="fees-parent-name">Name <span>(required)</span></label><input id="fees-parent-name" name="parentName" autocomplete="name" required maxlength="100" pattern=".*\S.*"></div>
   <div class="fees-field"><label for="fees-contact-number">Contact number <span>(required)</span></label><input id="fees-contact-number" name="contactNumber" type="tel" inputmode="tel" autocomplete="tel" required maxlength="30" aria-describedby="fees-phone-hint"><small id="fees-phone-hint">Include your area or country code.</small></div>
@@ -143,8 +146,7 @@ m301 -153 c58 -22 74 -119 28 -171 -24 -27 -36 -32 -95 -36 l-67 -6 0 112 0
   <div class="fee-enquiry-trap" aria-hidden="true"><label for="fee-enquiry-website">Leave this field blank</label><input id="fee-enquiry-website" name="website" tabindex="-1" autocomplete="off"></div>
   <p id="fee-enquiry-status" class="fee-enquiry-status" role="status" aria-live="polite" hidden></p>
   <button type="submit" class="btn btn--primary">Show fees</button>
- </form></section>
-</div></div></section>
+ </form></dialog>
 
 <dialog class="preview-dialog fees-dialog" id="fees-dialog" aria-labelledby="fees-dialog-title">
  <div class="preview-dialog__top"><p class="eyebrow">Plan your child’s next step</p><button type="button" data-close-dialog aria-label="Close fees">×</button></div>
@@ -159,11 +161,11 @@ m301 -153 c58 -22 74 -119 28 -171 -24 -27 -36 -32 -95 -36 l-67 -6 0 112 0
  </section>
 </dialog>
 
-<dialog class="preview-dialog fees-dialog" id="scholarship-dialog" aria-labelledby="scholarship-dialog-title" aria-describedby="scholarship-privacy-note">
+<dialog class="preview-dialog fees-dialog" id="scholarship-dialog" aria-labelledby="scholarship-dialog-title">
  <div class="preview-dialog__top"><p class="eyebrow">Scholarship interest</p><button type="button" data-close-dialog aria-label="Close scholarship interest form">×</button></div>
  <h2 id="scholarship-dialog-title">Scholarship opportunities</h2>
  <p>For <strong>strong academic performers only.</strong> Offered by third-party sponsors - subject to availability and eligibility.</p>
- <p id="scholarship-privacy-note" class="fees-preview-note" hidden></p>
+
  <p id="scholarship-email-option" hidden>For scholarship enquiries, <a href="mailto:info@eduplanet.co.za?subject=Scholarship%20interest">email info@eduplanet.co.za</a>.</p>
  <form id="scholarship-interest-form" method="dialog">
   <div class="fees-field"><label for="scholarship-parent-name">Parent or guardian name <span>(required)</span></label><input id="scholarship-parent-name" name="parentName" autocomplete="name" required maxlength="100" pattern=".*\S.*"></div>
@@ -226,4 +228,4 @@ m301 -153 c58 -22 74 -119 28 -171 -24 -27 -36 -32 -95 -36 l-67 -6 0 112 0
       <span>EMIS 200100266  ·  Exam centre 4342022  ·  Reg 2016/040404/07</span>
     </div>
   </div>
-</footer><script src="/assets/js/main.js" defer></script><script src="preview.js" defer></script><script src="focused.js?v=631a6d40e5" defer></script><dialog class="preview-dialog" id="missing-link-dialog" aria-labelledby="missing-link-title"><div class="preview-dialog__top"><p class="eyebrow">Admissions help</p><button type="button" data-close-dialog aria-label="Close link placeholder">×</button></div><h2 id="missing-link-title">Contact our accounts office</h2><p>Please contact our accounts office at <a href="mailto:info@eduplanet.co.za">info@eduplanet.co.za</a> for assistance.</p><code hidden class="placeholder-token" id="missing-link-token"></code></dialog><script src="enrolment.js?v=eb2c0a6d6c" defer></script></body></html>
+</footer><script src="/assets/js/main.js" defer></script><script src="preview.js" defer></script><script src="focused.js?v=631a6d40e5" defer></script><dialog class="preview-dialog" id="missing-link-dialog" aria-labelledby="missing-link-title"><div class="preview-dialog__top"><p class="eyebrow">Admissions help</p><button type="button" data-close-dialog aria-label="Close link placeholder">×</button></div><h2 id="missing-link-title">Contact our accounts office</h2><p>Please contact our accounts office at <a href="mailto:info@eduplanet.co.za">info@eduplanet.co.za</a> for assistance.</p><code hidden class="placeholder-token" id="missing-link-token"></code></dialog><script src="enrolment.js?v=9a60139cb3" defer></script></body></html>

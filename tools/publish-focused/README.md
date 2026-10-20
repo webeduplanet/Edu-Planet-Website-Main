@@ -2,7 +2,7 @@
 
 The `codex/reviewed-eduplanet-site` branch contains the actual reviewed website pages at the repository root, plus the supporting CSS, JavaScript and selected photographs. These include the Grade R–12 offering, Foundation Phase naming, updated logo alignment, phase actions, 2027 grade fee selector, concise admissions steps and scholarship-interest wording.
 
-This is a review branch. Public review notices have been removed; `noindex` metadata remains. It has not changed the production `main` branch or the live website. The owner confirmed email activation. All fee routes lead to included benefits, then a required inline contact form, then a fee popup after the service accepts the submission.
+This is a review branch. Public review notices have been removed; `noindex` metadata remains. It has not changed the production `main` branch or the live website. The owner confirmed email activation. All fee routes lead to included benefits, then a required contact-details popup, then a fee popup after the service accepts the submission.
 
 ## Before production deployment
 
