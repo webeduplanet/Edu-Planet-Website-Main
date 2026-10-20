@@ -481,7 +481,7 @@ ABOUT = pagehead(
     <div class="section-head reveal" style="max-width:60ch">
       <p class="eyebrow">Our ethos</p>
       <h2>Strong moral values, based on Christian principles.</h2>
-      <p class="lede">Our ethos is not a page in a prospectus. It sets the tone for how children are spoken to, how discipline is handled, and what we celebrate.</p>
+        <p class="lede">Our ethos is not a page in a prospectus. It sets the tone for how children are spoken to, how discipline is handled, and what we celebrate.</p>
     </div>
 
     <div class="split reveal" style="align-items:start">
