@@ -25,7 +25,7 @@ async function deliver(kind,data,signal){
  await ready;
  if(!config)throw new Error('The enquiry connection is unavailable. Please try again shortly.');
  if(data.website)throw new Error('Please check the form and try again.');
- if(config.feeEnquiryMode==='local-preview')return {preview:true};
+ if(config.feeEnquiryMode==='local-preview')throw new Error('Please email info@eduplanet.co.za for assistance.');
  let endpoint,payload,emailMode=config.feeEnquiryMode==='email';
  if(emailMode){
   const recipient=config.emailForms?.recipient;
@@ -45,8 +45,9 @@ async function deliver(kind,data,signal){
  if(!response.ok||!accepted)throw new Error(response.status===429?'Please wait a few minutes before trying again.':'We could not confirm your enquiry was sent. Please try again or contact the accounts office.');
  return {preview:false};
 }
-for(const button of document.querySelectorAll('[data-open-fees]'))button.addEventListener('click',()=>dialog.showModal());
-if(new URL(location.href).searchParams.get('view')==='fees')dialog.showModal();
+async function openFees(){await ready;const connected=config?.feeEnquiryMode==='connected'&&config.feeEnquiryEndpoint;const activeEmail=config?.feeEnquiryMode==='email'&&config.emailForms?.activated;const collect=Boolean(connected||activeEmail);form.hidden=!collect;reveal.hidden=collect;if(!collect)dialog.classList.add('fees-dialog--schedule');dialog.showModal();}
+for(const button of document.querySelectorAll('[data-open-fees]'))button.addEventListener('click',openFees);
+if(new URL(location.href).searchParams.get('view')==='fees')openFees();
 phone.addEventListener('input',()=>phone.setCustomValidity(''));email.addEventListener('input',()=>email.setCustomValidity(''));
 form.addEventListener('submit',async event=>{
  event.preventDefault();if(pending)return;
@@ -68,7 +69,7 @@ const scholarshipDialog=document.getElementById('scholarship-dialog');
 if(scholarshipDialog){
  const sf=document.getElementById('scholarship-interest-form'),sp=document.getElementById('scholarship-contact-number'),se=document.getElementById('scholarship-email'),sn=document.getElementById('scholarship-parent-name'),sg=document.getElementById('scholarship-grade'),ss=document.getElementById('scholarship-status'),confirmation=document.getElementById('scholarship-confirmation'),sb=sf.querySelector('[type="submit"]');
  let sending=false,abort,sequence=0;
- for(const button of document.querySelectorAll('[data-open-scholarship]'))button.addEventListener('click',()=>{if(lastContact){sn.value=lastContact.parentName;sp.value=lastContact.contactNumber;se.value=lastContact.email;}sg.value=gradeSelect?.value||'';scholarshipDialog.showModal();});
+ for(const button of document.querySelectorAll('[data-open-scholarship]'))button.addEventListener('click',async()=>{await ready;const collect=config?.feeEnquiryMode==='email'&&config.emailForms?.activated;sf.hidden=!collect;document.getElementById('scholarship-email-option').hidden=Boolean(collect);if(lastContact){sn.value=lastContact.parentName;sp.value=lastContact.contactNumber;se.value=lastContact.email;}sg.value=gradeSelect?.value||'';scholarshipDialog.showModal();});
  sp.addEventListener('input',()=>sp.setCustomValidity(''));se.addEventListener('input',()=>se.setCustomValidity(''));
  sf.addEventListener('submit',async event=>{
   event.preventDefault();if(sending||!validateContact(sn.value,sp,se))return;
@@ -77,7 +78,7 @@ if(scholarshipDialog){
   try{
    const result=await deliver('scholarship',{parentName:sn.value.trim(),contactNumber:sp.value.trim(),email:se.value.trim(),grade,website:sf.elements.website.value},abort.signal);
    if(!scholarshipDialog.open||sequence!==attempt)return;
-   sf.reset();sf.hidden=true;confirmation.hidden=false;document.getElementById('scholarship-confirmation-copy').textContent=result.preview?'Local demonstration complete. No email has been sent.':'Your scholarship-interest enquiry has been submitted.';document.getElementById('scholarship-confirmation-title').focus();
+   sf.reset();sf.hidden=true;confirmation.hidden=false;document.getElementById('scholarship-confirmation-copy').textContent='Your scholarship-interest enquiry has been submitted.';document.getElementById('scholarship-confirmation-title').focus();
   }catch(error){if(scholarshipDialog.open&&sequence===attempt)setMessage(ss,error.name==='AbortError'?'We could not confirm your enquiry was sent. Please try again or contact the accounts office.':error.message);}
   finally{clearTimeout(timer);sending=false;sb.disabled=false;sb.textContent='Submit scholarship interest';sf.removeAttribute('aria-busy');abort=null;}
  });
@@ -87,8 +88,8 @@ if(scholarshipDialog){
 await ready;if(!config)return;
 if(config.feeEnquiryMode==='email'){
  const message='Your details are processed by FormSubmit and emailed to '+config.emailForms.recipient+' for follow-up.';
- for(const id of ['fees-preview-note','scholarship-privacy-note']){const node=document.getElementById(id);if(node)node.textContent=message;}
-}else if(config.feeEnquiryMode==='connected')document.getElementById('fees-preview-note').textContent='Your name, contact number and email will be sent to EduPlanet’s enquiries spreadsheet so our accounts office can follow up.';
+ for(const id of ['fees-preview-note','scholarship-privacy-note']){const node=document.getElementById(id);if(node){node.textContent=message;node.hidden=false;}}
+}else if(config.feeEnquiryMode==='connected'){const note=document.getElementById('fees-preview-note');note.textContent='Your name, contact number and email will be sent to EduPlanet’s enquiries spreadsheet so our accounts office can follow up.';note.hidden=false;}
 document.getElementById('deadline-notice').textContent=config.deadlineNotice;document.getElementById('late-application-notice').textContent=config.lateApplicationNotice;
 for(const button of document.querySelectorAll('[data-enrolment-link]')){const key=button.dataset.enrolmentLink,url=config.links[key];let destination;try{const parsed=new URL(url);if(['https:','http:'].includes(parsed.protocol))destination=parsed.href;}catch{}
  if(destination){const a=document.createElement('a');a.className=button.className;a.innerHTML=button.innerHTML;a.href=destination;button.replaceWith(a);}

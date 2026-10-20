@@ -24,7 +24,7 @@
 <dialog class="preview-dialog fees-dialog" id="fees-dialog" aria-labelledby="fees-dialog-title" aria-describedby="fees-preview-note">
  <div class="preview-dialog__top"><p class="eyebrow">Plan your child’s next step</p><button type="button" data-close-dialog aria-label="Close fees">×</button></div>
  <h2 id="fees-dialog-title">View school fees</h2>
- <p id="fees-preview-note" class="fees-preview-note">Local demonstration: use sample details. Nothing is saved or sent.</p>
+ <p id="fees-preview-note" class="fees-preview-note" hidden></p>
  <form id="fees-access-form" method="dialog">
   <p>Enter your name, contact number and email address to view the 2027 fees.</p>
   <div class="fees-field"><label for="fees-parent-name">Name <span>(required)</span></label><input id="fees-parent-name" name="parentName" autocomplete="name" required maxlength="100" pattern=".*\S.*"></div>
@@ -46,7 +46,8 @@
  <div class="preview-dialog__top"><p class="eyebrow">Scholarship interest</p><button type="button" data-close-dialog aria-label="Close scholarship interest form">×</button></div>
  <h2 id="scholarship-dialog-title">Scholarship opportunities</h2>
  <p>For <strong>strong academic performers only.</strong> Offered by third-party sponsors - subject to availability and eligibility.</p>
- <p id="scholarship-privacy-note" class="fees-preview-note">Local demonstration: use sample details. Nothing is saved or sent.</p>
+ <p id="scholarship-privacy-note" class="fees-preview-note" hidden></p>
+ <p id="scholarship-email-option" hidden>For scholarship enquiries, <a href="mailto:info@eduplanet.co.za?subject=Scholarship%20interest">email info@eduplanet.co.za</a>.</p>
  <form id="scholarship-interest-form" method="dialog">
   <div class="fees-field"><label for="scholarship-parent-name">Parent or guardian name <span>(required)</span></label><input id="scholarship-parent-name" name="parentName" autocomplete="name" required maxlength="100" pattern=".*\S.*"></div>
   <div class="fees-field"><label for="scholarship-contact-number">Contact number <span>(required)</span></label><input id="scholarship-contact-number" name="contactNumber" type="tel" inputmode="tel" autocomplete="tel" required maxlength="30"></div>

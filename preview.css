@@ -1,4 +1,4 @@
-:root { --preview-bar: 44px; }
+:root { --preview-bar: 0px; }
 .preview-toolbar { position: sticky; top: 0; z-index: 180; min-height: var(--preview-bar); background: #e7f0f8; color: #16406b; border-bottom: 1px solid #cbdde9; font-size: 12px; }
 .preview-toolbar__inner { min-height: var(--preview-bar); padding: 0 24px; display: flex; justify-content: space-between; gap: 18px; align-items: center; }
 .preview-toolbar__label, .preview-toolbar__actions { display: flex; align-items: center; gap: 15px; }
@@ -44,7 +44,7 @@
 @media (max-width: 1040px) { .copy-preview .nav { top: calc(var(--header-height) + var(--preview-bar)); max-height: calc(100dvh - var(--header-height) - var(--preview-bar)); } }
 @media (max-width: 760px) { .preview-columns, .preview-statements { grid-template-columns: 1fr; gap: 36px; } }
 @media (max-width: 640px) {
-  :root { --preview-bar: 80px; }
+  :root { --preview-bar: 0px; }
   .preview-toolbar__inner { padding: 4px 14px; gap: 2px 12px; display: grid; grid-template-columns: 1fr 1fr; }
   .preview-toolbar__label { grid-column: 1; grid-row: 1; }
   .preview-toolbar__actions { display: contents; }

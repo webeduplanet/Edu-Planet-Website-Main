@@ -4,7 +4,7 @@ The current fee and scholarship-interest forms support FormSubmit email delivery
 
 ## Current state
 
-Both forms have been implemented and tested with simulated responses. The owner selected **info@eduplanet.co.za**. On 20 October 2026, FormSubmit reported sending its activation email for the EduPlanet admissions page. The inbox owner must click **Activate Form** and confirm completion before delivery is enabled. `feeEnquiryMode` remains `local-preview`, with a clear sample-data notice; `emailForms.activated` is false. Actual inbox delivery has not been verified.
+Both forms have been implemented and tested with simulated responses. The owner selected **info@eduplanet.co.za**. On 20 October 2026, FormSubmit reported sending its activation email for the EduPlanet admissions page. The inbox owner must click **Activate Form** and confirm completion before delivery is enabled. `feeEnquiryMode` remains `local-preview`, with fees visible directly and scholarship enquiries routed to a contact email link; `emailForms.activated` is false. Actual inbox delivery has not been verified.
 
 ## Activation
 
@@ -27,8 +27,8 @@ Both forms have been implemented and tested with simulated responses. The owner 
 
 ## Parent experience
 
-- Fee form: name, contact number and email; fees appear after the service positively acknowledges the enquiry.
-- Scholarship form: parent/guardian name, contact number, email and grade of interest. Details entered for fees are prefilled while the fee popup remains open; they can be edited.
+- Once email delivery is enabled, the fee form requests name, contact number and email; fees appear after the service positively acknowledges the enquiry. While email delivery is inactive, fees open directly without collecting contact details.
+- Once enabled, the scholarship form requests parent/guardian name, contact number, email and grade of interest. Until activation it presents a contact email link rather than accepting a submission. Details entered for fees are prefilled while the fee popup remains open; they can be edited.
 - Distinct email subjects identify fee enquiries and scholarship interest. The parent's email is set as Reply-To.
 - A rejected, timed-out or uncertain submission retains the form details and does not show a success message. Network timeouts can still leave delivery uncertain; the code makes no automatic retries.
 - Scholarship interest does not guarantee an award, availability or eligibility.
@@ -47,4 +47,4 @@ Run the automated checks with:
 node --test tools/fee-enquiry-integration/handler.test.cjs tools/fee-enquiry-integration/popup.test.cjs
 ```
 
-The current suite has 17 tests. They check behaviour with simulated provider responses, not actual inbox delivery.
+The current suite has 18 tests. They check behaviour with simulated provider responses, not actual inbox delivery.
