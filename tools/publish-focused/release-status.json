@@ -1,19 +1,27 @@
 {
-  "status": "review branch prepared; not production-ready",
+  "status": "Receiving inbox set to info@eduplanet.co.za; inbox activation and delivery verification required",
   "source": "Reviewed focused local preview",
   "pages": 10,
-  "gradeRange": "R\u201312",
+  "gradeRange": "R–12",
   "applicationFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLScvcPgIQBKiv7iKn_6qZiruPIOeQ464HQEsWTzH6ri8QJT2MA/viewform",
   "applicationFormChecked": "Existing live form responded successfully on 20 October 2026",
   "unresolved": [
-    "Fee contact capture is still local-only and must not be published as a working form.",
-    "Scholarship interest and appointment calendar destinations have not been supplied.",
+    "Approve the FormSubmit activation email in info@eduplanet.co.za.",
+    "Verify delivery of both email form types before publication.",
+    "Appointment calendar destination has not been supplied.",
     "Existing PDF application destination returned HTTP 403.",
-    "Vercel signed out; terminal has no authenticated GitHub push access."
+    "Authenticated repository push and production deployment still need verification."
   ],
   "releaseOptions": [
-    "Connect the Google Forms first.",
-    "With the owner\u2019s agreement, show fees openly and use accounts-office contact links temporarily."
+    "Activate and verify the temporary email route for both forms.",
+    "Connect the Google Forms later if desired."
   ],
-  "branch": "codex/reviewed-eduplanet-site"
+  "branch": "codex/reviewed-eduplanet-site",
+  "emailActivation": {
+    "recipient": "info@eduplanet.co.za",
+    "requestedOn": "2026-10-20",
+    "serviceResponse": "Needs activation; service reports activation email sent",
+    "ownerConfirmed": false,
+    "deliveryVerified": false
+  }
 }

@@ -6,8 +6,9 @@ This is a review branch. It retains a clear review notice and `noindex` metadata
 
 ## Before production deployment
 
-- Connect the approved Google fee-enquiry form, or obtain the owner's decision to show fees without collecting details temporarily.
-- Supply the scholarship-interest and appointment booking destinations, or agree an accounts-office contact fallback.
+- Confirm the receiving inbox and activate the temporary email route for both the fee enquiry and scholarship-interest forms. See [Email setup](../fee-enquiry-integration/EMAIL-SETUP.md). Both forms currently remain in demonstration mode; no email has been sent.
+- Verify an actual email from each form reaches that inbox before enabling submissions publicly.
+- Supply the appointment booking destination, or agree an accounts-office contact fallback.
 - Verify the printable application document destination; the existing live PDF URL returned HTTP 403 during checking.
 - Remove the review toolbar, review/export controls, demonstration mode and noindex metadata as part of production preparation.
 - Set production page titles, descriptions and canonical URLs.

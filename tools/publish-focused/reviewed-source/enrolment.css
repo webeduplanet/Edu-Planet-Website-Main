@@ -125,3 +125,9 @@
 .scholarship-interest-button .scholarship-button-title { display:block; font-size:1rem; font-weight:800; line-height:1.4; }
 .scholarship-interest-button .scholarship-button-subtitle { display:block; margin-top:7px; font-size:.88rem; line-height:1.5; }
 .scholarship-interest-button .scholarship-button-terms { display:block; margin-top:7px; font-size:.8rem; line-height:1.5; }
+
+#scholarship-dialog[open] { width:min(600px,calc(100% - 32px)); max-width:600px; }
+#scholarship-dialog h2 { font-size:clamp(1.5rem,3vw,2rem); line-height:1.2; }
+#scholarship-confirmation { margin-top:25px; }
+#scholarship-confirmation h3 { font-size:1.35rem; }
+#scholarship-dialog>p { font-size:.92rem; line-height:1.6; }
