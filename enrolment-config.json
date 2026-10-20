@@ -7,10 +7,10 @@
     "VISIT_CALENDAR_URL": "[VISIT_CALENDAR_URL]",
     "APPLICATION_PDF_URL": "[APPLICATION_PDF_URL]"
   },
-  "feeEnquiryMode": "local-preview",
+  "feeEnquiryMode": "email",
   "feeEnquiryEndpoint": "",
   "emailForms": {
     "recipient": "info@eduplanet.co.za",
-    "activated": false
+    "activated": true
   }
 }

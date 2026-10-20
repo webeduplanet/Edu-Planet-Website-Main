@@ -2,11 +2,11 @@
 
 The `codex/reviewed-eduplanet-site` branch contains the actual reviewed website pages at the repository root, plus the supporting CSS, JavaScript and selected photographs. These include the Grade R–12 offering, Foundation Phase naming, updated logo alignment, phase actions, 2027 grade fee selector, concise admissions steps and scholarship-interest wording.
 
-This is a review branch. Public review notices have been removed; `noindex` metadata remains. It has not changed the production `main` branch or the live website. Until email activation, fees open directly without collecting details and scholarship enquiries use an email link to info@eduplanet.co.za.
+This is a review branch. Public review notices have been removed; `noindex` metadata remains. It has not changed the production `main` branch or the live website. The owner confirmed email activation. All fee routes lead to included benefits, then a required inline contact form, then a fee popup after the service accepts the submission.
 
 ## Before production deployment
 
-- Confirm the receiving inbox and activate the temporary email route for both the fee enquiry and scholarship-interest forms. See [Email setup](../fee-enquiry-integration/EMAIL-SETUP.md). The activation email has been requested; the inbox owner has not yet confirmed activation.
+- Verify the enabled email route for both the fee enquiry and scholarship-interest forms. See [Email setup](../fee-enquiry-integration/EMAIL-SETUP.md). The owner confirmed activation for info@eduplanet.co.za on 20 October 2026.
 - Verify an actual email from each form reaches that inbox before enabling submissions publicly.
 - Supply the appointment booking destination, or agree an accounts-office contact fallback.
 - Verify the printable application document destination; the existing live PDF URL returned HTTP 403 during checking.

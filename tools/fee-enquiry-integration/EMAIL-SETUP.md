@@ -4,7 +4,7 @@ The current fee and scholarship-interest forms support FormSubmit email delivery
 
 ## Current state
 
-Both forms have been implemented and tested with simulated responses. The owner selected **info@eduplanet.co.za**. On 20 October 2026, FormSubmit reported sending its activation email for the EduPlanet admissions page. The inbox owner must click **Activate Form** and confirm completion before delivery is enabled. `feeEnquiryMode` remains `local-preview`, with fees visible directly and scholarship enquiries routed to a contact email link; `emailForms.activated` is false. Actual inbox delivery has not been verified.
+The owner selected **info@eduplanet.co.za** and confirmed clicking **Activate Form** on 20 October 2026. `feeEnquiryMode` is now `email` and `emailForms.activated` is true. All View fees entry links lead to included benefits. The button beneath the benefits reveals a required inline name, phone and email form. Only a positive submission acknowledgement opens the separate fee popup. There is no direct-fee bypass when the connection is unavailable. Live browser and setup checks did not confirm delivery: requests timed out or returned HTTP 403. Actual inbox delivery remains unverified.
 
 ## Activation
 
@@ -27,7 +27,7 @@ Both forms have been implemented and tested with simulated responses. The owner 
 
 ## Parent experience
 
-- Once email delivery is enabled, the fee form requests name, contact number and email; fees appear after the service positively acknowledges the enquiry. While email delivery is inactive, fees open directly without collecting contact details.
+- The inline fee form requests name, contact number and email; fees appear after the service positively acknowledges the enquiry. An unavailable or inactive connection leaves the form visible with an error; fees stay closed.
 - Once enabled, the scholarship form requests parent/guardian name, contact number, email and grade of interest. Until activation it presents a contact email link rather than accepting a submission. Details entered for fees are prefilled while the fee popup remains open; they can be edited.
 - Distinct email subjects identify fee enquiries and scholarship interest. The parent's email is set as Reply-To.
 - A rejected, timed-out or uncertain submission retains the form details and does not show a success message. Network timeouts can still leave delivery uncertain; the code makes no automatic retries.

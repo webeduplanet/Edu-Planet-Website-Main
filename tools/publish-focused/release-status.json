@@ -1,12 +1,11 @@
 {
-  "status": "Receiving inbox set to info@eduplanet.co.za; inbox activation and delivery verification required",
+  "status": "Required contact-to-fee-popup flow implemented; owner confirmed email activation; actual delivery remains unverified",
   "source": "Reviewed focused local preview",
   "pages": 10,
   "gradeRange": "R–12",
   "applicationFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLScvcPgIQBKiv7iKn_6qZiruPIOeQ464HQEsWTzH6ri8QJT2MA/viewform",
   "applicationFormChecked": "Existing live form responded successfully on 20 October 2026",
   "unresolved": [
-    "Approve the FormSubmit activation email in info@eduplanet.co.za.",
     "Verify delivery of both email form types before publication.",
     "Appointment calendar destination has not been supplied.",
     "Existing PDF application destination returned HTTP 403.",
@@ -21,7 +20,9 @@
     "recipient": "info@eduplanet.co.za",
     "requestedOn": "2026-10-20",
     "serviceResponse": "Needs activation; service reports activation email sent",
-    "ownerConfirmed": false,
-    "deliveryVerified": false
+    "ownerConfirmed": true,
+    "deliveryVerified": false,
+    "ownerConfirmedOn": "2026-10-20",
+    "latestSetupCheck": "Live browser did not confirm successful submission; setup requests timed out or returned HTTP 403."
   }
 }

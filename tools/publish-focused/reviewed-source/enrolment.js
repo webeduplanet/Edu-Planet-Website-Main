@@ -2,6 +2,7 @@
 const titles={FAQ_URL:'Full FAQ',APPLICATION_FORM_URL:'Application form',APPLICATION_PDF_URL:'PDF application form',VISIT_CALENDAR_URL:'School visit booking'};
 const dialog=document.getElementById('fees-dialog'),form=document.getElementById('fees-access-form'),reveal=document.getElementById('fees-reveal'),phone=document.getElementById('fees-contact-number'),email=document.getElementById('fees-email'),status=document.getElementById('fee-enquiry-status'),submit=form.querySelector('[type="submit"]');
 let config,pending=false,controller,generation=0,lastContact=null;
+const contactSection=document.getElementById('fee-enquiry');
 const gradeSelect=document.getElementById('fee-grade-select');
 function updateFeeGrade(){
  if(!gradeSelect)return;
@@ -45,7 +46,7 @@ async function deliver(kind,data,signal){
  if(!response.ok||!accepted)throw new Error(response.status===429?'Please wait a few minutes before trying again.':'We could not confirm your enquiry was sent. Please try again or contact the accounts office.');
  return {preview:false};
 }
-async function openFees(){await ready;const connected=config?.feeEnquiryMode==='connected'&&config.feeEnquiryEndpoint;const activeEmail=config?.feeEnquiryMode==='email'&&config.emailForms?.activated;const collect=Boolean(connected||activeEmail);form.hidden=!collect;reveal.hidden=collect;if(!collect)dialog.classList.add('fees-dialog--schedule');dialog.showModal();}
+async function openFees(){await ready;contactSection.hidden=false;form.hidden=false;reveal.hidden=true;for(const button of document.querySelectorAll('[data-open-fees]'))button.setAttribute('aria-expanded','true');contactSection.scrollIntoView({block:'start'});document.getElementById('fees-parent-name').focus({preventScroll:true});}
 for(const button of document.querySelectorAll('[data-open-fees]'))button.addEventListener('click',openFees);
 if(new URL(location.href).searchParams.get('view')==='fees'&&!location.hash)location.hash='fees';
 phone.addEventListener('input',()=>phone.setCustomValidity(''));email.addEventListener('input',()=>email.setCustomValidity(''));
@@ -58,9 +59,9 @@ form.addEventListener('submit',async event=>{
  try{
   submit.textContent='Sending…';
   await deliver('fees',data,controller.signal);
-  if(!dialog.open||attempt!==generation)return;
-  lastContact=data;form.reset();setMessage(status,'');dialog.classList.add('fees-dialog--schedule');form.hidden=true;reveal.hidden=false;document.getElementById('fees-reveal-title').focus();
- }catch(error){if(dialog.open&&attempt===generation)setMessage(status,error.name==='AbortError'?'We could not confirm your enquiry was sent. Please try again or contact the accounts office.':error.message);}
+  if(contactSection.hidden||attempt!==generation)return;
+  lastContact=data;form.reset();setMessage(status,'');dialog.classList.add('fees-dialog--schedule');reveal.hidden=false;dialog.showModal();document.getElementById('fees-reveal-title').focus();
+ }catch(error){if(!contactSection.hidden&&attempt===generation)setMessage(status,error.name==='AbortError'?'We could not confirm your enquiry was sent. Please try again or contact the accounts office.':error.message);}
  finally{clearTimeout(timer);pending=false;submit.disabled=false;submit.textContent='Show fees';form.removeAttribute('aria-busy');controller=null;}
 });
 dialog.addEventListener('cancel',event=>{if(pending)event.preventDefault();});

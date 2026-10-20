@@ -2,7 +2,7 @@
 
 This branch contains the reviewed ten-page website for Grade R–12. The four phase pages, selected photographs, 2027 fee selector, admissions updates and aligned logo are included at the repository root.
 
-**Review status:** public review banners and demonstration notices have been removed. Noindex metadata remains. The fee enquiry and scholarship forms support temporary email delivery; until inbox activation is confirmed, fees are shown directly and scholarship enquiries use an email link to info@eduplanet.co.za. This branch is not ready to replace production until those connections and production cleanup are completed. See [release notes](tools/publish-focused/README.md).
+**Review status:** public review banners and demonstration notices have been removed. Noindex metadata remains. The fee enquiry and scholarship forms support temporary email delivery; the owner has confirmed inbox activation and email mode is enabled for info@eduplanet.co.za. Every fee entry route leads through the included benefits and a required inline contact form before opening the fee popup. This branch is not ready to replace production until those connections and production cleanup are completed. See [release notes](tools/publish-focused/README.md).
 
 ## Pages
 
@@ -33,7 +33,7 @@ The historical `tools/build_pages.py` produces the older website and must not be
 
 ## Forms
 
-Email delivery for the fee and scholarship forms is prepared for info@eduplanet.co.za; see `tools/fee-enquiry-integration/EMAIL-SETUP.md`. The service reports sending its activation email, and delivery remains inactive until the inbox owner approves activation. The prepared server-side integration and setup instructions remain in `tools/fee-enquiry-integration/`. No secret credentials have been added. The application, PDF, appointment and FAQ destinations still use labelled review placeholders.
+Email delivery for the fee and scholarship forms is prepared for info@eduplanet.co.za; see `tools/fee-enquiry-integration/EMAIL-SETUP.md`. The inbox owner confirmed activation on 20 October 2026. Fee details now require a successful contact-form submission; live inbox delivery remains to be verified. The prepared server-side integration and setup instructions remain in `tools/fee-enquiry-integration/`. No secret credentials have been added. The application, PDF, appointment and FAQ destinations still use labelled review placeholders.
 
 ## Publishing
 
