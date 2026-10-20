@@ -2,12 +2,12 @@
 
 The `codex/reviewed-eduplanet-site` branch contains the actual reviewed website pages at the repository root, plus the supporting CSS, JavaScript and selected photographs. These include the Grade R–12 offering, Foundation Phase naming, updated logo alignment, phase actions, 2027 grade fee selector, concise admissions steps and scholarship-interest wording.
 
-This is a review branch. Public review notices have been removed; `noindex` metadata remains. It has not changed the production `main` branch or the live website. The owner confirmed email activation. All fee routes lead to included benefits, then a required contact-details popup, then a fee popup after the service accepts the submission.
+This is a review branch. Public review notices have been removed; `noindex` metadata remains. It has not changed the production `main` branch or the live website. Apply actions now open the existing Google application form directly. View fees opens the current page’s grade-fee popup, with the supplied Learning Resources, Academic Support and Sport & Extramurals content under a collapsed toggle. The fee contact popup is removed; scholarship interest remains a separate form.
 
 ## Before production deployment
 
-- Verify the enabled email route for both the fee enquiry and scholarship-interest forms. See [Email setup](../fee-enquiry-integration/EMAIL-SETUP.md). The owner confirmed activation for info@eduplanet.co.za on 20 October 2026.
-- Verify an actual email from each form reaches that inbox before enabling submissions publicly.
+- Verify the scholarship-interest email route. See [Email setup](../fee-enquiry-integration/EMAIL-SETUP.md). The owner confirmed activation for info@eduplanet.co.za on 20 October 2026.
+- Verify an actual scholarship-interest email reaches the inbox.
 - Supply the appointment booking destination, or agree an accounts-office contact fallback.
 - Verify the printable application document destination; the existing live PDF URL returned HTTP 403 during checking.
 - Remove noindex metadata as part of production preparation. Review controls and demonstration notices are already removed.

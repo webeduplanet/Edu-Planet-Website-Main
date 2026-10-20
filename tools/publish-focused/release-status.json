@@ -1,12 +1,12 @@
 {
-  "status": "Required contact popup precedes fee popup; owner confirmed email activation; delivery remains unverified",
+  "status": "Direct Google applications and public grade-fee popups with expandable inclusions; contact gate removed",
   "source": "Reviewed focused local preview",
   "pages": 10,
   "gradeRange": "R–12",
   "applicationFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLScvcPgIQBKiv7iKn_6qZiruPIOeQ464HQEsWTzH6ri8QJT2MA/viewform",
   "applicationFormChecked": "Existing live form responded successfully on 20 October 2026",
   "unresolved": [
-    "Verify delivery of both email form types before publication.",
+    "Scholarship-interest email delivery remains unverified.",
     "Appointment calendar destination has not been supplied.",
     "Existing PDF application destination returned HTTP 403.",
     "Authenticated repository push and production deployment still need verification."

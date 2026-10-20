@@ -4,8 +4,11 @@ import shutil,re,json
 REPO=Path(__file__).resolve().parents[2]
 SOURCE=Path(__file__).resolve().parent/'reviewed-source'
 PAGES=['index.html','about.html','academics.html','admissions.html','school-life.html','contact.html','early-years.html','intermediate.html','senior.html','matric.html']
+dialogs=(SOURCE/'enrolment-source/fee-dialogs.html').read_text().strip()
 for file in PAGES:
  text=(SOURCE/file).read_text()
+ text=re.sub(r'<dialog\b[^>]*\bid="(?:fees-dialog|scholarship-dialog)".*?</dialog>','',text,flags=re.S)
+ text=text.replace('</main>',dialogs+'\n</main>',1)
  text=text.replace('/focused/','/')
  text=re.sub(r'<a href="/selected/[^\"]*">Previous draft</a>','',text)
  (REPO/file).write_text(text)

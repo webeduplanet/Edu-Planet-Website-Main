@@ -132,6 +132,19 @@
 #scholarship-confirmation h3 { font-size:1.35rem; }
 #scholarship-dialog>p { font-size:.92rem; line-height:1.6; }
 
-/* Contact details open before the separate fee popup. */
-.fee-contact-dialog[open] { width:min(560px,calc(100% - 32px)); max-width:560px; }
-.fee-contact-dialog h2 { font-size:clamp(1.5rem,3vw,2rem); line-height:1.2; }
+/* Expandable fee inclusions. */
+.fee-inclusions { margin:24px 0; border:1px solid #cbdfea; border-radius:7px; background:#f4f8fb; }
+.fee-inclusions>summary { list-style:none; display:flex; align-items:center; gap:18px; padding:17px 18px; cursor:pointer; font-size:.95rem; font-weight:750; line-height:1.5; color:var(--brand); }
+.fee-inclusions>summary::-webkit-details-marker { display:none; }
+.fee-inclusions>summary::after { content:'+'; flex:none; margin-left:auto; font-size:1.35rem; font-weight:500; }
+.fee-inclusions[open]>summary::after { content:'−'; }
+.fee-inclusions>summary:focus-visible { outline:3px solid #8ac7ee; outline-offset:3px; border-radius:7px; }
+.fee-inclusions__body { padding:0 18px 20px; }
+.fee-inclusions__body>p { font-size:.9rem; line-height:1.65; }
+.fee-inclusions article { padding-top:18px; margin-top:18px; border-top:1px solid #d5e2eb; }
+.fee-inclusions h4 { font-size:1rem; margin:0 0 12px; }
+.fee-inclusions ul { margin:0; padding-left:19px; }
+.fee-inclusions li { font-size:.88rem; line-height:1.65; margin-bottom:10px; color:var(--text-muted); }
+.fee-inclusions li:last-child { margin-bottom:0; }
+.fee-inclusions strong { color:var(--text); }
+.fees-dialog .btn:disabled { opacity:.65; cursor:default; }

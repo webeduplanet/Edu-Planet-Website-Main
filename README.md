@@ -2,7 +2,7 @@
 
 This branch contains the reviewed ten-page website for Grade R–12. The four phase pages, selected photographs, 2027 fee selector, admissions updates and aligned logo are included at the repository root.
 
-**Review status:** public review banners and demonstration notices have been removed. Noindex metadata remains. The fee enquiry and scholarship forms support temporary email delivery; the owner has confirmed inbox activation and email mode is enabled for info@eduplanet.co.za. Every fee entry route leads through the included benefits and a required contact-details popup before opening the fee popup. This branch is not ready to replace production until those connections and production cleanup are completed. See [release notes](tools/publish-focused/README.md).
+**Review status:** Public review notices and the fee contact gate are removed. Apply actions link directly to the school’s Google application form. View fees opens a shared grade-fee popup on the current page, with the supplied inclusions in a collapsed toggle. Noindex metadata and the remaining PDF/appointment placeholders still need release cleanup. See [release notes](tools/publish-focused/README.md).
 
 ## Pages
 
@@ -33,7 +33,7 @@ The historical `tools/build_pages.py` produces the older website and must not be
 
 ## Forms
 
-Email delivery for the fee and scholarship forms is prepared for info@eduplanet.co.za; see `tools/fee-enquiry-integration/EMAIL-SETUP.md`. The inbox owner confirmed activation on 20 October 2026. Fee details now require a successful contact-form submission; live inbox delivery remains to be verified. The prepared server-side integration and setup instructions remain in `tools/fee-enquiry-integration/`. No secret credentials have been added. The application, PDF, appointment and FAQ destinations still use labelled review placeholders.
+Fees are public and collect no contact details. The separate scholarship-interest form retains its enabled email route to info@eduplanet.co.za, with actual inbox delivery still unverified. No secret credentials have been added. See `tools/fee-enquiry-integration/EMAIL-SETUP.md`.
 
 ## Publishing
 

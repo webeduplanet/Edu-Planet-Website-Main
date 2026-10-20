@@ -4,7 +4,9 @@ The current fee and scholarship-interest forms support FormSubmit email delivery
 
 ## Current state
 
-The owner selected **info@eduplanet.co.za** and confirmed clicking **Activate Form** on 20 October 2026. `feeEnquiryMode` is now `email` and `emailForms.activated` is true. All View fees entry links lead to included benefits. The button beneath the benefits reveals a required name, phone and email popup form. Only a positive submission acknowledgement opens the separate fee popup. There is no direct-fee bypass when the connection is unavailable. Live browser and setup checks did not confirm delivery: requests timed out or returned HTTP 403. Actual inbox delivery remains unverified.
+The fee contact gate has been removed at the owner’s request. View fees now opens a public grade-based popup on the current page, with an expandable inclusions summary. It collects no contact details and sends no fee-enquiry emails. Apply actions link directly to the existing Google application form.
+
+The separate scholarship-interest form still sends to **info@eduplanet.co.za**. The owner confirmed activation on 20 October 2026, but live inbox delivery remains unverified after connection timeouts/rejections.
 
 ## Activation
 
@@ -23,17 +25,15 @@ The owner selected **info@eduplanet.co.za** and confirmed clicking **Activate Fo
 
 `feeEnquiryEndpoint` is unused in email mode. No private key is needed. Setting `activated` to true does not activate FormSubmit; the inbox owner must actually approve the service first. The guard prevents sending while that setup is incomplete.
 
-5. Test both forms with agreed sample contact details and confirm both emails arrive. Then publish the approved website update.
+5. Test the scholarship-interest form with agreed sample contact details and confirm its email arrives. Then publish the approved website update.
 
 ## Parent experience
 
-- The contact-details popup requests name, contact number and email; fees appear after the service positively acknowledges the enquiry. An unavailable or inactive connection leaves the form visible with an error; fees stay closed.
-- Once enabled, the scholarship form requests parent/guardian name, contact number, email and grade of interest. Until activation it presents a contact email link rather than accepting a submission. Details entered for fees are prefilled while the fee popup remains open; they can be edited.
-- Distinct email subjects identify fee enquiries and scholarship interest. The parent's email is set as Reply-To.
-- A rejected, timed-out or uncertain submission retains the form details and does not show a success message. Network timeouts can still leave delivery uncertain; the code makes no automatic retries.
-- Scholarship interest does not guarantee an award, availability or eligibility.
-- The website keeps no contact database and writes no parent details to browser storage. FormSubmit processes the submission and documents retaining submissions for 30 days; the receiving school mailbox keeps its delivered emails according to the school's own retention settings.
-- The AJAX route uses the provider's server-side spam filtering and the website's hidden honeypot. It does not present an interactive reCAPTCHA. For stronger public-traffic protection, use a hosted form with a challenge or a server-side service.
+- Fees open immediately, with no name, phone or email required and no provider request.
+- The native expandable toggle contains the school’s supplied three benefit groups.
+- Scholarship interest is a separate form requesting parent/guardian name, contact number, email and grade.
+- Scholarship success requires a positive provider acknowledgement. Failure retains entered details, and closing an in-progress request prevents a late success confirmation.
+- The website writes no contact details to browser storage. FormSubmit processes scholarship submissions; receiving-mailbox retention is controlled by the school.
 
 ## Documentation
 
@@ -47,4 +47,4 @@ Run the automated checks with:
 node --test tools/fee-enquiry-integration/handler.test.cjs tools/fee-enquiry-integration/popup.test.cjs
 ```
 
-The current suite has 19 tests. They check behaviour with simulated provider responses, not actual inbox delivery.
+The current suite checks public fee access and separate scholarship submission behaviour with simulated provider responses, not actual inbox delivery.
