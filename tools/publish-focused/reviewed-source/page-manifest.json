@@ -1,0 +1,332 @@
+[
+  {
+    "file": "index.html",
+    "label": "Home",
+    "sections": [
+      {
+        "id": "home-hero",
+        "label": "Main banner"
+      },
+      {
+        "id": "home-proof",
+        "label": "Quick benefits"
+      },
+      {
+        "id": "home-learning",
+        "label": "Learning and support"
+      },
+      {
+        "id": "home-ethos",
+        "label": "Christian identity"
+      },
+      {
+        "id": "learning-phases",
+        "label": "Find your child\u2019s phase"
+      },
+      {
+        "id": "home-practical",
+        "label": "Practical family information"
+      },
+      {
+        "id": "home-life",
+        "label": "School life"
+      },
+      {
+        "id": "visit-invitation",
+        "label": "Visit invitation"
+      }
+    ],
+    "words": 363
+  },
+  {
+    "file": "early-years.html",
+    "label": "Grades R\u20133",
+    "sections": [
+      {
+        "id": "page-introduction",
+        "label": "Phase introduction"
+      },
+      {
+        "id": "phase-benefits",
+        "label": "Benefits for this stage"
+      },
+      {
+        "id": "phase-learning",
+        "label": "Learning and support"
+      },
+      {
+        "id": "phase-subjects",
+        "label": "Subjects and curriculum"
+      },
+      {
+        "id": "phase-questions",
+        "label": "Questions for this phase"
+      },
+      {
+        "id": "phase-next",
+        "label": "The next step"
+      },
+      {
+        "id": "visit-invitation",
+        "label": "Visit invitation"
+      }
+    ],
+    "words": 348
+  },
+  {
+    "file": "intermediate.html",
+    "label": "Grades 4\u20136",
+    "sections": [
+      {
+        "id": "page-introduction",
+        "label": "Phase introduction"
+      },
+      {
+        "id": "phase-benefits",
+        "label": "Benefits for this stage"
+      },
+      {
+        "id": "phase-learning",
+        "label": "Learning and support"
+      },
+      {
+        "id": "phase-subjects",
+        "label": "Subjects and curriculum"
+      },
+      {
+        "id": "phase-questions",
+        "label": "Questions for this phase"
+      },
+      {
+        "id": "phase-next",
+        "label": "The next step"
+      },
+      {
+        "id": "visit-invitation",
+        "label": "Visit invitation"
+      }
+    ],
+    "words": 365
+  },
+  {
+    "file": "senior.html",
+    "label": "Grades 7\u20139",
+    "sections": [
+      {
+        "id": "page-introduction",
+        "label": "Phase introduction"
+      },
+      {
+        "id": "phase-benefits",
+        "label": "Benefits for this stage"
+      },
+      {
+        "id": "phase-learning",
+        "label": "Learning and support"
+      },
+      {
+        "id": "phase-subjects",
+        "label": "Subjects and curriculum"
+      },
+      {
+        "id": "phase-questions",
+        "label": "Questions for this phase"
+      },
+      {
+        "id": "phase-next",
+        "label": "The next step"
+      },
+      {
+        "id": "visit-invitation",
+        "label": "Visit invitation"
+      }
+    ],
+    "words": 373
+  },
+  {
+    "file": "matric.html",
+    "label": "Grades 10\u201312",
+    "sections": [
+      {
+        "id": "page-introduction",
+        "label": "Phase introduction"
+      },
+      {
+        "id": "phase-benefits",
+        "label": "Benefits for this stage"
+      },
+      {
+        "id": "phase-learning",
+        "label": "Learning and support"
+      },
+      {
+        "id": "phase-subjects",
+        "label": "Subjects and curriculum"
+      },
+      {
+        "id": "phase-questions",
+        "label": "Questions for this phase"
+      },
+      {
+        "id": "phase-next",
+        "label": "The next step"
+      },
+      {
+        "id": "visit-invitation",
+        "label": "Visit invitation"
+      }
+    ],
+    "words": 392
+  },
+  {
+    "file": "about.html",
+    "label": "About",
+    "sections": [
+      {
+        "id": "page-introduction",
+        "label": "Page introduction"
+      },
+      {
+        "id": "our-story",
+        "label": "Our school story"
+      },
+      {
+        "id": "vision-mission",
+        "label": "Vision and mission"
+      },
+      {
+        "id": "foundation-values",
+        "label": "Foundation, character and values"
+      },
+      {
+        "id": "whole-child",
+        "label": "Developing the whole child"
+      },
+      {
+        "id": "school-details",
+        "label": "School registration"
+      },
+      {
+        "id": "visit-invitation",
+        "label": "Visit invitation"
+      }
+    ],
+    "words": 390
+  },
+  {
+    "file": "academics.html",
+    "label": "Academics",
+    "sections": [
+      {
+        "id": "page-introduction",
+        "label": "Page introduction"
+      },
+      {
+        "id": "learning-phases",
+        "label": "Learning by phase"
+      },
+      {
+        "id": "teaching-support",
+        "label": "Teaching and support"
+      },
+      {
+        "id": "technology",
+        "label": "Technology and future preparation"
+      },
+      {
+        "id": "standards",
+        "label": "Academic standards"
+      },
+      {
+        "id": "visit-invitation",
+        "label": "Visit invitation"
+      }
+    ],
+    "words": 304
+  },
+  {
+    "file": "admissions.html",
+    "label": "Admissions",
+    "sections": [
+      {
+        "id": "page-introduction",
+        "label": "Four-step overview and application deadline"
+      },
+      {
+        "id": "application",
+        "label": "Step 1: complete the application form"
+      },
+      {
+        "id": "book-appointment",
+        "label": "Step 2: book a school tour and learner interview"
+      },
+      {
+        "id": "outcome",
+        "label": "Step 3: Receive your outcome"
+      },
+      {
+        "id": "secure-place",
+        "label": "Step 4: Accept your offer and secure your child\u2019s place"
+      },
+      {
+        "id": "fees-information",
+        "label": "2027 fees and included benefits"
+      }
+    ],
+    "words": 657
+  },
+  {
+    "file": "school-life.html",
+    "label": "School Life",
+    "sections": [
+      {
+        "id": "page-introduction",
+        "label": "Page introduction"
+      },
+      {
+        "id": "sport",
+        "label": "Sport and teamwork"
+      },
+      {
+        "id": "creative-learning",
+        "label": "Creative learning"
+      },
+      {
+        "id": "service",
+        "label": "Character and service"
+      },
+      {
+        "id": "school-gallery",
+        "label": "Our school community"
+      },
+      {
+        "id": "visit-invitation",
+        "label": "Visit invitation"
+      }
+    ],
+    "words": 175
+  },
+  {
+    "file": "contact.html",
+    "label": "Contact",
+    "sections": [
+      {
+        "id": "page-introduction",
+        "label": "Page introduction"
+      },
+      {
+        "id": "contact-details",
+        "label": "Contact details and office hours"
+      },
+      {
+        "id": "contact-visit",
+        "label": "Location and visiting"
+      },
+      {
+        "id": "family-questions",
+        "label": "Practical questions"
+      }
+    ],
+    "words": 132
+  }
+]

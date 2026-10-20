@@ -1,0 +1,13 @@
+{
+  "deadlineNotice": "2027 applications close: 30 October 2026.",
+  "lateApplicationNotice": "Late applications will be considered on a case-by-case basis, subject to availability.",
+  "links": {
+    "FAQ_URL": "[FAQ_URL]",
+    "APPLICATION_FORM_URL": "[APPLICATION_FORM_URL]",
+    "VISIT_CALENDAR_URL": "[VISIT_CALENDAR_URL]",
+    "APPLICATION_PDF_URL": "[APPLICATION_PDF_URL]",
+    "SCHOLARSHIP_INTEREST_FORM_URL": "[SCHOLARSHIP_INTEREST_FORM_URL]"
+  },
+  "feeEnquiryMode": "local-preview",
+  "feeEnquiryEndpoint": ""
+}

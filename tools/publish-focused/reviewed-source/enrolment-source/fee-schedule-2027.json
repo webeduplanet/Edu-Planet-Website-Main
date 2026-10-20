@@ -1,0 +1,76 @@
+{
+  "year": 2027,
+  "grades": [
+    "Grade R",
+    "Grade 1\u20133",
+    "Grade 4\u20135",
+    "Grade 6\u20137",
+    "Grade 8\u20139",
+    "Grade 10\u201311",
+    "Grade 12"
+  ],
+  "rows": [
+    {
+      "label": "Registration fee",
+      "amounts": [
+        500,
+        1000,
+        1500,
+        1500,
+        1500,
+        1500,
+        1500
+      ]
+    },
+    {
+      "label": "Monthly fee",
+      "amounts": [
+        1700,
+        2300,
+        2450,
+        2600,
+        2750,
+        2900,
+        3050
+      ]
+    },
+    {
+      "label": "3 months (5% discount)",
+      "amounts": [
+        4845,
+        6555,
+        6983,
+        7410,
+        7838,
+        8265,
+        8693
+      ]
+    },
+    {
+      "label": "6 months (7.5% discount)",
+      "amounts": [
+        9435,
+        12765,
+        13598,
+        14430,
+        15263,
+        16095,
+        16928
+      ]
+    },
+    {
+      "label": "12 months (10% discount)",
+      "amounts": [
+        18360,
+        24840,
+        26460,
+        28080,
+        29700,
+        31320,
+        32940
+      ]
+    }
+  ],
+  "source": "User-supplied fee structure screenshot, 20 October 2026",
+  "offeringNote": "Grade R is now the first offered grade, as confirmed by the school on 20 October 2026. Supplied fee amounts are unchanged."
+}

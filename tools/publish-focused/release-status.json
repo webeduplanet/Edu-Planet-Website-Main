@@ -1,0 +1,19 @@
+{
+  "status": "review branch prepared; not production-ready",
+  "source": "Reviewed focused local preview",
+  "pages": 10,
+  "gradeRange": "R\u201312",
+  "applicationFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLScvcPgIQBKiv7iKn_6qZiruPIOeQ464HQEsWTzH6ri8QJT2MA/viewform",
+  "applicationFormChecked": "Existing live form responded successfully on 20 October 2026",
+  "unresolved": [
+    "Fee contact capture is still local-only and must not be published as a working form.",
+    "Scholarship interest and appointment calendar destinations have not been supplied.",
+    "Existing PDF application destination returned HTTP 403.",
+    "Vercel signed out; terminal has no authenticated GitHub push access."
+  ],
+  "releaseOptions": [
+    "Connect the Google Forms first.",
+    "With the owner\u2019s agreement, show fees openly and use accounts-office contact links temporarily."
+  ],
+  "branch": "codex/reviewed-eduplanet-site"
+}
