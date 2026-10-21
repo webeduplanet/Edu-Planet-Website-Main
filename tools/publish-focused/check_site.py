@@ -62,9 +62,16 @@ def check(preview=False):
         for link in page.links:
             target_exists(name, link)
         require(not re.search(r'\bRR\b|\[[A-Z_]+_URL\]|/focused/', text), f'{name}: stale grade, token or preview URL')
-        require('fees-dialog' in page.ids and 'scholarship-dialog' in page.ids, f'{name}: shared dialogs missing')
+        require('fees-dialog' in page.ids, f'{name}: shared fee dialog missing')
+        require('scholarship-dialog' not in page.ids and 'scholarship-interest-form' not in page.ids, f'{name}: old scholarship email popup must be removed')
         require(not any('data-enrolment-link' in attrs for tag, attrs in page.nodes), f'{name}: unresolved action control')
         for tag, attrs in page.nodes:
+            if 'data-scholarship-form' in attrs:
+                require(tag == 'a' and attrs.get('href') == links['SCHOLARSHIP_FORM_URL'], f'{name}: scholarship action must open the supplied Google Form directly')
+                require(attrs.get('target') == '_blank' and 'noopener' in attrs.get('rel', '').split(), f'{name}: scholarship form must open safely in a new tab')
+            if 'data-appointment' in attrs:
+                require(tag == 'a' and attrs.get('href') == links['VISIT_CALENDAR_URL'], f'{name}: appointment link must use the supplied booking calendar directly')
+                require(attrs.get('target') == '_blank' and 'noopener' in attrs.get('rel', '').split(), f'{name}: booking must open safely in a new tab')
             if tag == 'img':
                 require(bool(attrs.get('alt')), f'{name}: image alternative missing')
                 require('width' in attrs and 'height' in attrs, f'{name}: image dimensions missing')
@@ -73,6 +80,7 @@ def check(preview=False):
             if label == 'Apply now':
                 require(f'href="{application}"' in match[1], f'{name}: Apply now must open the Google Form directly')
         panels = re.findall(r'<dl class="selected-grade-fees".*?</dl>', text, re.S)
+        require(sum('data-scholarship-form' in attrs for tag, attrs in page.nodes) == 1, f'{name}: requires one direct scholarship action')
         amounts = [amount for panel in panels for amount in re.findall(r'<dd>(.*?)</dd>', panel)]
         require(amounts == expected_fees, f'{name}: supplied fee amounts changed')
         if name != '404.html':
@@ -138,6 +146,7 @@ def check(preview=False):
         require(private + '/' in (ROOT / '.vercelignore').read_text(), f'Vercel must exclude {private}')
         require("--exclude '" + private + "'" in (ROOT / '.github/workflows/pages.yml').read_text(), f'Pages must exclude {private}')
     require('Select your child’s phase.' in texts['academics.html'], 'Owner Academics edit must be preserved')
+    require('formsubmit.co' not in (ROOT / 'enrolment.js').read_text(), 'Retired scholarship email submission code must not ship')
     return errors
 
 

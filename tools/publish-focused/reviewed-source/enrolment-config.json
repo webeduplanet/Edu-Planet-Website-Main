@@ -4,13 +4,8 @@
   "links": {
     "FAQ_URL": "admissions.html#parent-questions",
     "APPLICATION_FORM_URL": "https://docs.google.com/forms/d/e/1FAIpQLScvcPgIQBKiv7iKn_6qZiruPIOeQ464HQEsWTzH6ri8QJT2MA/viewform",
-    "VISIT_CALENDAR_URL": "",
-    "APPLICATION_PDF_URL": "https://drive.google.com/file/d/1VNhCtmf2qK9WhQM9tGySzwZwashXaS5p/view?usp=sharing"
-  },
-  "feeEnquiryMode": "email",
-  "feeEnquiryEndpoint": "",
-  "emailForms": {
-    "recipient": "info@eduplanet.co.za",
-    "activated": true
+    "VISIT_CALENDAR_URL": "https://calendar.app.google/rQCZKfAzNZM5TZcx9",
+    "APPLICATION_PDF_URL": "https://drive.google.com/file/d/1VNhCtmf2qK9WhQM9tGySzwZwashXaS5p/view?usp=sharing",
+    "SCHOLARSHIP_FORM_URL": "https://forms.gle/BwquU76GTesuLUAbA"
   }
 }

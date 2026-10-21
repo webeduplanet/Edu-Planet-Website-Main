@@ -7,8 +7,7 @@
   "applicationFormChecked": "Existing live form responded successfully on 20 October 2026",
   "unresolved": [
     "Google Form still needs owner/editor changes, including removal of Grade RR.",
-    "Scholarship-interest inbox delivery remains unverified.",
-    "Booking calendar not supplied; working appointment-request routes are provided.",
+    "Confirm intended-parent access and response/notification settings for the supplied sponsorship Google Form.",
     "Verified results, credentials, parent quotes, phase practical details and reels must be supplied before adding new claims.",
     "Analytics account not configured.",
     "The old parent-testimonials route awaits approved parent quotations.",
@@ -16,18 +15,9 @@
   ],
   "releaseOptions": [
     "Review the local preview, then publish through the existing authorised hosting workflow.",
-    "Connect supplied PDF/calendar URLs later without disabling current email/WhatsApp request routes."
+    "Keep the supplied PDF and booking-calendar destinations current; retain school contact channels for assistance."
   ],
   "branch": "main (local uncommitted improvements)",
-  "emailActivation": {
-    "recipient": "info@eduplanet.co.za",
-    "requestedOn": "2026-10-20",
-    "serviceResponse": "Needs activation; service reports activation email sent",
-    "ownerConfirmed": true,
-    "deliveryVerified": false,
-    "ownerConfirmedOn": "2026-10-20",
-    "latestSetupCheck": "Live browser did not confirm successful submission; setup requests timed out or returned HTTP 403."
-  },
   "preparedOn": "2026-10-21",
   "applicationPdfUrl": "https://drive.google.com/file/d/1VNhCtmf2qK9WhQM9tGySzwZwashXaS5p/view?usp=sharing",
   "applicationPdfChecked": "Opened without sign-in; download and print controls available on 20 October 2026",
@@ -44,5 +34,9 @@
     "totalPermanentRedirects": 27,
     "oldApplicationPdfRedirect": "Supplied current Google Drive PDF",
     "liveVerification": "Not performed after deployment; changes remain local"
-  }
+  },
+  "bookingCalendarUrl": "https://calendar.app.google/rQCZKfAzNZM5TZcx9",
+  "bookingCalendarChecked": "Public School Intro & Interview booking page opened with available times on 21 October 2026; no booking submitted.",
+  "scholarshipFormUrl": "https://forms.gle/BwquU76GTesuLUAbA",
+  "scholarshipFormChecked": "Linked as supplied. Public-access verification redirected to Google sign-in and was blocked by automatic approval review; no form submitted."
 }

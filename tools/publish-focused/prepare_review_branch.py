@@ -17,7 +17,7 @@ META={
  'academics.html':('Academics & Learner Support | EduPlanet','Explore EduPlanet’s CAPS curriculum, small classes, free extra classes, learner support and technology education from Grade R to Grade 12.'),
  'admissions.html':('Admissions & 2027 School Fees | EduPlanet','View EduPlanet’s 2027 fees and included benefits. Apply online, request a school visit and understand the three steps to enrolment.'),
  'school-life.html':('Sport, Activities & School Life | EduPlanet','Discover soccer, netball, creative learning and Christian service at EduPlanet Independent School in Gqeberha.'),
- 'contact.html':('Contact & Appointment Requests | EduPlanet','Contact EduPlanet about applications or a school visit. Find our phone, WhatsApp, office hours and directions to Struandale, Gqeberha.'),
+ 'contact.html':('Contact & School Visit Bookings | EduPlanet','Book a school visit or contact EduPlanet about applications. Find our phone, WhatsApp, office hours and directions to Struandale, Gqeberha.'),
  'early-years.html':('Foundation Phase, Grades R–3 | EduPlanet','A caring start to school through stories, play, early literacy and numeracy. Explore EduPlanet’s Foundation Phase, support and 2027 fees.'),
  'intermediate.html':('Intermediate Phase, Grades 4–6 | EduPlanet','Explore broader subjects, growing independence and academic support in EduPlanet’s Intermediate Phase. View 2027 fees and apply online.'),
  'senior.html':('Senior Phase, Grades 7–9 | EduPlanet','Explore EduPlanet’s Senior Phase: a broad curriculum, healthy discipline, learner support and guidance towards Grade 10 subject choices.'),

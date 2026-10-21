@@ -4,7 +4,7 @@ The ten-page Grade R–12 website is at the repository root. Its durable editing
 
 ## Editing
 
-Edit the page sources, `shared-footer.html`, styles and scripts in `reviewed-source/`. Admissions content is also kept in `enrolment-source/body.html`; update the matching Admissions page when changing that fragment. `enrolment-source/fee-dialogs.html` is the single shared fee/scholarship dialog fragment injected into every page. Core navigation/video behaviour lives in the root `assets/js/main.js`.
+Edit the page sources, `shared-footer.html`, styles and scripts in `reviewed-source/`. Admissions content is also kept in `enrolment-source/body.html`; update the matching Admissions page when changing that fragment. `enrolment-source/fee-dialogs.html` is the shared fee dialog, including the scholarship-form link, injected into every page. Core navigation/video behaviour lives in the root `assets/js/main.js`.
 
 Build with Python 3 and Pillow installed:
 
@@ -23,9 +23,9 @@ Do not run the historical `tools/build_pages.py`; it generates an older website.
 - Every Apply now link opens the existing school Google application form directly.
 - View fees opens the current page’s grade-fee popup. There is no contact gate. Only the selected grade is remembered in session storage; no contact details are stored there.
 - Full benefits remain visible on Admissions, with a shorter expandable summary in the popup. Stationery and optional aftercare are identified separately.
-- Appointment requests lead to Contact, then the existing school WhatsApp number or accounts email. They do not book or confirm a time automatically. An approved HTTPS `VISIT_CALENDAR_URL` in `enrolment-config.json` can replace these request links later.
+- Make an appointment links open the owner-supplied Google Calendar booking page in a new tab. They work directly in HTML, including without JavaScript; `VISIT_CALENDAR_URL` stores the same link. Parents choose a time and complete their booking on Google Calendar. Phone, WhatsApp and email remain available for help.
 - Step 1 links Download the PDF form directly to the owner-supplied Google Drive PDF. The viewer opens in a new tab and offers download and print, including without signing in. `APPLICATION_PDF_URL` stores the same link.
-- The scholarship form registers interest through the existing email route. Activation is owner-confirmed; inbox delivery remains unverified.
+- Register scholarship interest opens the supplied Google sponsorship form in a new tab. No scholarship contact details are collected or emailed by this website. Response collection and any email notifications are managed in the Google Form. `SCHOLARSHIP_FORM_URL` stores the link.
 
 The application deadline and late-application notice are manually editable in `enrolment-config.json`. The current deadline is 30 October 2026.
 
@@ -38,10 +38,10 @@ Reports, tools, original source media and local `output/` and `tmp/` drafts are 
 ## Still needed from the school or account owner
 
 1. Edit the Google Form: remove Grade RR; review its title, duplicate contact questions, academic-support wording, optional marketing questions, second page and confirmation. Website access alone does not grant editor access to that form.
-2. A current application PDF link has been supplied and connected. Provide a booking calendar if wanted in place of the working appointment-request routes.
+2. The current application PDF and booking calendar have both been supplied and connected. Keep these destinations current in the source configuration and matching HTML links.
 3. Confirm aftercare hours/charges, phase entry requirements, document checklist, subject combinations and examination-board details before publishing additional specifics.
 4. Supply approved current results, staff credentials, parent testimonials and relevant reels before adding new evidence or claims.
-5. Confirm a real scholarship enquiry reaches info@eduplanet.co.za. No real enquiry was sent during implementation/testing.
+5. Confirm the sponsorship Google Form’s parent access/sign-in requirements, response destination and desired notifications. Verification stopped at Google sign-in; no form was submitted.
 6. Select/connect an analytics account before measuring completed applications and appointments. No tracking service has been added.
 7. Supply approved parent quotations before restoring or redirecting `/parent-testimonials/`. That one legacy page intentionally remains unresolved; no quotes or ratings have been invented.
 8. Review this local version, publish through the authorised Git/hosting workflow, then test the actual domain. The live site's older application action and indexing settings remain unchanged until deployment.

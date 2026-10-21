@@ -17,7 +17,7 @@ Open `http://127.0.0.1:8001/`.
 - Direct Google application links and shared View fees access.
 - Ungated 2027 grade-fee popup with a fixed title/close control and Apply action.
 - Full Admissions benefits plus expandable popup summary; optional aftercare is separated from tuition inclusions.
-- Working appointment requests via the existing school WhatsApp and accounts email.
+- Direct Google Calendar booking links for school visits, with phone, WhatsApp and email available for help.
 - Concise phase-specific copy, consistent names/actions/footer and mobile refinements.
 - Poster-first mobile hero and a quiet desktop background video; no visible video control.
 - Distinct metadata, canonical URLs, school structured data, sitemap and public search-indexing settings.
@@ -40,4 +40,4 @@ The generator requires Python 3 and Pillow. `--preview` produces explicitly non-
 
 ## External connections
 
-Fees collect no contact details. The separate scholarship-interest form retains its enabled email route to info@eduplanet.co.za; activation is confirmed but actual inbox delivery remains unverified. No secret credentials or analytics service have been added. The owner-supplied application PDF is linked from Admissions. Google Form editing, a booking calendar, verified evidence and a live deployment check remain separate owner/account tasks.
+Fees collect no contact details. Scholarship interest links directly to the supplied sponsorship Google Form; the former website email popup has been removed. Google Form access, responses and notifications are controlled by its owner. No secret credentials or analytics service have been added. The owner-supplied application PDF is linked from Admissions. The supplied school-visit booking calendar is connected. Google Form editing, verified evidence and a live deployment check remain separate owner/account tasks.
