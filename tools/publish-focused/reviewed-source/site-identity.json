@@ -1,0 +1,19 @@
+{
+  "name": "EduPlanet Independent School",
+  "description": "A Christian independent school in Struandale, Gqeberha, offering Grade R to Grade 12.",
+  "url": "https://www.eduplanet.co.za",
+  "logo": "/assets/img/eduplanet-mark.svg",
+  "telephone": "+27414511046",
+  "email": "info@eduplanet.co.za",
+  "admissionsEmail": "accounts@eduplanet.co.za",
+  "foundingDate": "2016",
+  "emis": "200100266",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1 Eveready Road, Struandale",
+    "addressLocality": "Gqeberha",
+    "addressRegion": "Eastern Cape",
+    "postalCode": "6200",
+    "addressCountry": "ZA"
+  }
+}

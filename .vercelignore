@@ -4,3 +4,10 @@ assets/source/
 
 # Dev-only page generator.
 tools/
+
+# Internal review notes are not public website content.
+reports/
+
+# Local form drafts and intermediate checks must not be published.
+output/
+tmp/

@@ -19,5 +19,143 @@
         }
       ]
     }
+  ],
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/about",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/accreditation-umalusi",
+      "destination": "/academics.html#standards",
+      "permanent": true
+    },
+    {
+      "source": "/admissions",
+      "destination": "/admissions.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/school-life.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/culture",
+      "destination": "/school-life.html#creative-learning",
+      "permanent": true
+    },
+    {
+      "source": "/extra-curricular",
+      "destination": "/school-life.html",
+      "permanent": true
+    },
+    {
+      "source": "/fee-structure",
+      "destination": "/admissions.html?view=fees#fees",
+      "permanent": true
+    },
+    {
+      "source": "/fet",
+      "destination": "/matric.html",
+      "permanent": true
+    },
+    {
+      "source": "/foundation-phase",
+      "destination": "/early-years.html",
+      "permanent": true
+    },
+    {
+      "source": "/get",
+      "destination": "/senior.html",
+      "permanent": true
+    },
+    {
+      "source": "/high",
+      "destination": "/academics.html#learning-phases",
+      "permanent": true
+    },
+    {
+      "source": "/intermediate-phase",
+      "destination": "/intermediate.html",
+      "permanent": true
+    },
+    {
+      "source": "/literacy-program",
+      "destination": "/academics.html#teaching-support",
+      "permanent": true
+    },
+    {
+      "source": "/mathematics-program",
+      "destination": "/academics.html#teaching-support",
+      "permanent": true
+    },
+    {
+      "source": "/outings-camps",
+      "destination": "/school-life.html",
+      "permanent": true
+    },
+    {
+      "source": "/primary",
+      "destination": "/academics.html#learning-phases",
+      "permanent": true
+    },
+    {
+      "source": "/school-life",
+      "destination": "/school-life.html",
+      "permanent": true
+    },
+    {
+      "source": "/senior-phase",
+      "destination": "/senior.html",
+      "permanent": true
+    },
+    {
+      "source": "/sport",
+      "destination": "/school-life.html#sport",
+      "permanent": true
+    },
+    {
+      "source": "/wp-sitemap.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap_index.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/facilities",
+      "destination": "/school-life.html#facilities",
+      "permanent": true
+    },
+    {
+      "source": "/important-documents",
+      "destination": "/admissions.html#downloads",
+      "permanent": true
+    },
+    {
+      "source": "/uniform",
+      "destination": "/admissions.html#uniform",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2023/08/Eduplanet-Application-Form-2024.pdf",
+      "destination": "https://drive.google.com/file/d/1VNhCtmf2qK9WhQM9tGySzwZwashXaS5p/view?usp=sharing",
+      "permanent": true
+    }
   ]
 }

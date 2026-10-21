@@ -76,69 +76,42 @@
     targets.forEach(function (el) { el.classList.add('in', 'done'); });
   }
 
-  /* --------------------------------------------------------- hero video
-     Playback is started by the browser itself: the element carries `autoplay`
-     and its sources in the markup, so it begins during page parse rather than
-     waiting for this script. Everything here is a safety net around that. */
+  /* Background motion: retain poster-first mobile and reduced-motion behaviour. */
   var hero = document.querySelector('.hero');
   var video = hero && hero.querySelector('video');
-
-  // Some browsers refuse muted autoplay regardless — iOS in Low Power Mode is
-  // the common one. Rather than leave a silent still, offer the play.
-  function offerPlayButton() {
-    if (!hero || hero.querySelector('.hero__play') || !video.querySelector('source')) return;
-    var host = hero.querySelector('.hero__inner .wrap') || hero;
-    var b = document.createElement('button');
-    b.type = 'button';
-    b.className = 'hero__play';
-    b.innerHTML =
-      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.4v13.2L19 12z"/></svg>' +
-      '<span>Play video</span>';
-    b.addEventListener('click', function () {
-      video.muted = true;                       // a muted play is the one browsers allow
-      var p = video.play();
-      if (p && p.then) { p.then(function () { b.remove(); }).catch(function () {}); }
-      else { b.remove(); }
-    });
-    host.appendChild(b);
-  }
-
   if (video) {
-    // Nudge it once, in case autoplay was deferred rather than refused.
-    var kick = function () {
-      if (!video.paused || !video.querySelector('source')) return;
-      var p = video.play();
-      if (p && p.catch) { p.catch(function () { if (video.paused) offerPlayButton(); }); }
-    };
-    if (video.readyState >= 2) { kick(); }
-    video.addEventListener('loadeddata', kick, { once: true });
-    window.addEventListener('load', kick, { once: true });
-
-    // If it still has not started shortly after load, autoplay was refused.
-    window.setTimeout(function () {
-      if (video.paused && video.querySelector('source')) { offerPlayButton(); }
-    }, 1800);
-
-    // Don't keep decoding off-screen.
+    var saveData = navigator.connection && navigator.connection.saveData;
+    var userPaused = reduceMotion.matches || !!saveData || window.matchMedia('(max-width: 760px)').matches;
+    var inView = true;
+    var loaded = false;
+    function loadVideo() {
+      if (loaded) return;
+      video.querySelectorAll('source[data-src]').forEach(function (source) { source.src = source.dataset.src; });
+      loaded = true;
+      video.load();
+    }
+    function playWhenAllowed() {
+      if (userPaused || !inView || document.hidden) return;
+      loadVideo();
+      video.muted = true;
+      var playing = video.play();
+      if (playing && playing.catch) playing.catch(function () {});
+    }
     if ('IntersectionObserver' in window) {
       new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (!video.querySelector('source')) return;
-          if (e.isIntersecting) { video.play().catch(function () {}); }
-          else { video.pause(); }
-        });
+        inView = entries[0].isIntersecting;
+        if (inView) playWhenAllowed(); else video.pause();
       }, { threshold: 0.01 }).observe(hero);
     }
+    document.addEventListener('visibilitychange', function () {
+      document.body.classList.toggle('paused', document.hidden);
+      if (document.hidden) video.pause(); else playWhenAllowed();
+    });
+    if (reduceMotion.addEventListener) reduceMotion.addEventListener('change', function (event) {
+      if (event.matches) { userPaused = true; video.pause(); }
+    });
+    playWhenAllowed();
   }
-
-  /* --------------------------------------------------- pause on hidden tab */
-  document.addEventListener('visibilitychange', function () {
-    document.body.classList.toggle('paused', document.hidden);
-    if (video && video.querySelector('source')) {
-      if (document.hidden) { video.pause(); }
-      else { video.play().catch(function () {}); }
-    }
-  });
 
   /* ------------------------------------------------------------- accordion */
   document.querySelectorAll('.faq__q').forEach(function (btn) {

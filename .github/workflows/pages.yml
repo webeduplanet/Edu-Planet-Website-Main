@@ -29,11 +29,15 @@ jobs:
         with:
           enablement: true
 
+      - name: Check public pages and parent journeys
+        run: python3 tools/publish-focused/check_site.py
+
       - name: Assemble the published site
         run: |
           mkdir -p _site
           rsync -a \
-            --exclude '.git' --exclude '.github' \
+            --exclude '.git' --exclude '.github' --exclude '_site' --exclude 'reports' \
+            --exclude 'output' --exclude 'tmp' --exclude '.gitignore' \
             --exclude 'assets/source' --exclude 'tools' \
             --exclude 'README.md' --exclude 'vercel.json' --exclude '.vercelignore' \
             ./ _site/

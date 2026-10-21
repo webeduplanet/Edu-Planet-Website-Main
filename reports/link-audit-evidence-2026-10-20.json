@@ -1,0 +1,230 @@
+{
+  "date": "2026-10-20",
+  "currentPages": [
+    {
+      "url": "https://www.eduplanet.co.za/index.html",
+      "status": 200,
+      "robots": [
+        "noindex, nofollow"
+      ]
+    },
+    {
+      "url": "https://www.eduplanet.co.za/about.html",
+      "status": 200,
+      "robots": [
+        "noindex, nofollow"
+      ]
+    },
+    {
+      "url": "https://www.eduplanet.co.za/contact.html",
+      "status": 200,
+      "robots": [
+        "noindex, nofollow"
+      ]
+    },
+    {
+      "url": "https://www.eduplanet.co.za/early-years.html",
+      "status": null,
+      "robots": null
+    },
+    {
+      "url": "https://www.eduplanet.co.za/school-life.html",
+      "status": 200,
+      "robots": [
+        "noindex, nofollow"
+      ]
+    },
+    {
+      "url": "https://www.eduplanet.co.za/matric.html",
+      "status": 200,
+      "robots": [
+        "noindex, nofollow"
+      ]
+    },
+    {
+      "url": "https://www.eduplanet.co.za/intermediate.html",
+      "status": 200,
+      "robots": [
+        "noindex, nofollow"
+      ]
+    },
+    {
+      "url": "https://www.eduplanet.co.za/admissions.html",
+      "status": 200,
+      "robots": [
+        "noindex, nofollow"
+      ]
+    },
+    {
+      "url": "https://www.eduplanet.co.za/senior.html",
+      "status": 200,
+      "robots": [
+        "noindex, nofollow"
+      ]
+    },
+    {
+      "url": "https://www.eduplanet.co.za/academics.html",
+      "status": 200,
+      "robots": [
+        "noindex, nofollow"
+      ]
+    }
+  ],
+  "foundationRecheck": {
+    "url": "https://www.eduplanet.co.za/early-years.html",
+    "status": 200,
+    "finalUrl": "https://www.eduplanet.co.za/early-years.html"
+  },
+  "legacyPages": [
+    {
+      "oldUrl": "https://eduplanet.co.za/about/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/about/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/accreditation-umalusi/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/accreditation-umalusi/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/admissions/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/admissions/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/blog/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/blog/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/contact/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/contact/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/culture/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/culture/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/extra-curricular/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/extra-curricular/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/facilities/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/facilities/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/fee-structure/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/fee-structure/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/fet/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/fet/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/foundation-phase/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/foundation-phase/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/get/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/get/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/high/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/high/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/important-documents/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/important-documents/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/intermediate-phase/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/intermediate-phase/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/literacy-program/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/literacy-program/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/mathematics-program/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/mathematics-program/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/outings-camps/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/outings-camps/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/parent-testimonials/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/parent-testimonials/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/primary/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/primary/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/school-life/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/school-life/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/senior-phase/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/senior-phase/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/sport/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/sport/"
+    },
+    {
+      "oldUrl": "https://eduplanet.co.za/uniform/",
+      "status": 404,
+      "finalUrl": "https://www.eduplanet.co.za/uniform/"
+    }
+  ],
+  "liveConfiguration": [
+    {
+      "url": "https://www.eduplanet.co.za/enrolment-config.json",
+      "status": 200,
+      "configuration": {
+        "deadlineNotice": "2027 applications close: 30 October 2026.",
+        "lateApplicationNotice": "Late applications will be considered on a case-by-case basis, subject to availability.",
+        "links": {
+          "FAQ_URL": "[FAQ_URL]",
+          "APPLICATION_FORM_URL": "[APPLICATION_FORM_URL]",
+          "VISIT_CALENDAR_URL": "[VISIT_CALENDAR_URL]",
+          "APPLICATION_PDF_URL": "[APPLICATION_PDF_URL]"
+        },
+        "feeEnquiryMode": "local-preview",
+        "feeEnquiryEndpoint": "",
+        "emailForms": {
+          "recipient": "info@eduplanet.co.za",
+          "activated": false
+        }
+      }
+    },
+    {
+      "url": "https://www.eduplanet.co.za/early-years.html",
+      "status": 200,
+      "robots": [
+        "noindex, nofollow"
+      ]
+    }
+  ],
+  "note": "Initial Foundation Phase lookup failed transiently, then returned 200. See explicit rechecks."
+}

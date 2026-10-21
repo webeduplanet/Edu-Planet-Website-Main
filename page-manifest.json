@@ -250,7 +250,7 @@
     "sections": [
       {
         "id": "page-introduction",
-        "label": "Four-step overview and application deadline"
+        "label": "Three-step overview and application deadline"
       },
       {
         "id": "application",
@@ -261,12 +261,8 @@
         "label": "Step 2: book a school tour and learner interview"
       },
       {
-        "id": "outcome",
-        "label": "Step 3: Receive your outcome"
-      },
-      {
         "id": "secure-place",
-        "label": "Step 4: Accept your offer and secure your child\u2019s place"
+        "label": "Step 3: Secure your child\u2019s place at EduPlanet"
       },
       {
         "id": "fees-information",

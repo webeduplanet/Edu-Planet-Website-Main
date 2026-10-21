@@ -1,0 +1,32 @@
+{
+  "source": "School navigation recovered from the 31 July 2024 archive; audited 20-21 October 2026",
+  "paths": [
+    "/about",
+    "/accreditation-umalusi",
+    "/admissions",
+    "/blog",
+    "/contact",
+    "/culture",
+    "/extra-curricular",
+    "/facilities",
+    "/fee-structure",
+    "/fet",
+    "/foundation-phase",
+    "/get",
+    "/high",
+    "/important-documents",
+    "/intermediate-phase",
+    "/literacy-program",
+    "/mathematics-program",
+    "/outings-camps",
+    "/parent-testimonials",
+    "/primary",
+    "/school-life",
+    "/senior-phase",
+    "/sport",
+    "/uniform"
+  ],
+  "pending": {
+    "/parent-testimonials": "Approved parent quotations have not been supplied. Keep 404 until relevant current content exists."
+  }
+}

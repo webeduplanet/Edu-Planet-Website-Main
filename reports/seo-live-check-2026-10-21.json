@@ -1,0 +1,832 @@
+{
+  "checked_on": "2026-10-21 Africa/Johannesburg",
+  "checks": [
+    {
+      "requested": "https://www.eduplanet.co.za/",
+      "status": 200,
+      "final_url": "https://www.eduplanet.co.za/",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "title": [
+        "Home | EduPlanet"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "description": [
+        "Explore EduPlanet Independent School, our learning phases, admissions and school life in Gqeberha."
+      ],
+      "structured_data": false,
+      "grade_rr": false,
+      "application_pdf": false
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/index.html",
+      "status": 200,
+      "final_url": "https://www.eduplanet.co.za/index.html",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "title": [
+        "Home | EduPlanet"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "description": [
+        "Explore EduPlanet Independent School, our learning phases, admissions and school life in Gqeberha."
+      ],
+      "structured_data": false,
+      "grade_rr": false,
+      "application_pdf": false
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/about.html",
+      "status": 200,
+      "final_url": "https://www.eduplanet.co.za/about.html",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "title": [
+        "About | EduPlanet"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "description": [
+        "Explore EduPlanet Independent School, our learning phases, admissions and school life in Gqeberha."
+      ],
+      "structured_data": false,
+      "grade_rr": false,
+      "application_pdf": false
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/academics.html",
+      "status": 200,
+      "final_url": "https://www.eduplanet.co.za/academics.html",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "title": [
+        "Academics | EduPlanet"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "description": [
+        "Explore EduPlanet Independent School, our learning phases, admissions and school life in Gqeberha."
+      ],
+      "structured_data": false,
+      "grade_rr": false,
+      "application_pdf": false
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/admissions.html",
+      "status": 200,
+      "final_url": "https://www.eduplanet.co.za/admissions.html",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "title": [
+        "Admissions | EduPlanet"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "description": [
+        "Explore EduPlanet Independent School, our learning phases, admissions and school life in Gqeberha."
+      ],
+      "structured_data": false,
+      "grade_rr": false,
+      "application_pdf": true
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/school-life.html",
+      "status": 200,
+      "final_url": "https://www.eduplanet.co.za/school-life.html",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "title": [
+        "School Life | EduPlanet"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "description": [
+        "Explore EduPlanet Independent School, our learning phases, admissions and school life in Gqeberha."
+      ],
+      "structured_data": false,
+      "grade_rr": false,
+      "application_pdf": false
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/contact.html",
+      "status": 200,
+      "final_url": "https://www.eduplanet.co.za/contact.html",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "title": [
+        "Contact | EduPlanet"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "description": [
+        "Explore EduPlanet Independent School, our learning phases, admissions and school life in Gqeberha."
+      ],
+      "structured_data": false,
+      "grade_rr": false,
+      "application_pdf": false
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/early-years.html",
+      "status": 200,
+      "final_url": "https://www.eduplanet.co.za/early-years.html",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "title": [
+        "Foundation Phase | EduPlanet"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "description": [
+        "Explore EduPlanet Independent School, our learning phases, admissions and school life in Gqeberha."
+      ],
+      "structured_data": false,
+      "grade_rr": false,
+      "application_pdf": false
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/intermediate.html",
+      "status": 200,
+      "final_url": "https://www.eduplanet.co.za/intermediate.html",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "title": [
+        "Grades 4\u20136 | EduPlanet"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "description": [
+        "Explore EduPlanet Independent School, our learning phases, admissions and school life in Gqeberha."
+      ],
+      "structured_data": false,
+      "grade_rr": false,
+      "application_pdf": false
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/senior.html",
+      "status": 200,
+      "final_url": "https://www.eduplanet.co.za/senior.html",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "title": [
+        "Grades 7\u20139 | EduPlanet"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "description": [
+        "Explore EduPlanet Independent School, our learning phases, admissions and school life in Gqeberha."
+      ],
+      "structured_data": false,
+      "grade_rr": false,
+      "application_pdf": false
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/matric.html",
+      "status": 200,
+      "final_url": "https://www.eduplanet.co.za/matric.html",
+      "redirects": [],
+      "content_type": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "title": [
+        "Grades 10\u201312 | EduPlanet"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "description": [
+        "Explore EduPlanet Independent School, our learning phases, admissions and school life in Gqeberha."
+      ],
+      "structured_data": false,
+      "grade_rr": false,
+      "application_pdf": false
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/robots.txt",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/robots.txt",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "body": "The page could not be found\n\nNOT_FOUND\n\ncpt1::cdjjg-1792608519932-4764c02d205c\n"
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/sitemap.xml",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/sitemap.xml",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "body": "The page could not be found\n\nNOT_FOUND\n\ncpt1::zdvhc-1792608519935-bc08001ceb16\n"
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/sitemap_index.xml",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/sitemap_index.xml",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "body": "The page could not be found\n\nNOT_FOUND\n\ncpt1::8cvzt-1792608519943-e718725d6f6b\n"
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/wp-sitemap.xml",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/wp-sitemap.xml",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "body": "The page could not be found\n\nNOT_FOUND\n\ncpt1::gk58r-1792608519955-73dcac6ecba0\n"
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/seo-check-missing-page-20261021",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/seo-check-missing-page-20261021",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/about/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/about/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/accreditation-umalusi/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/accreditation-umalusi/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/admissions/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/admissions/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/blog/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/blog/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/contact/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/contact/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/culture/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/culture/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/extra-curricular/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/extra-curricular/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/facilities/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/facilities/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/fee-structure/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/fee-structure/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/fet/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/fet/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/foundation-phase/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/foundation-phase/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/get/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/get/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/high/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/high/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/important-documents/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/important-documents/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/intermediate-phase/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/intermediate-phase/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/literacy-program/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/literacy-program/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/mathematics-program/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/mathematics-program/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/outings-camps/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/outings-camps/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/parent-testimonials/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/parent-testimonials/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/primary/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/primary/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/school-life/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/school-life/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/senior-phase/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/senior-phase/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/sport/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/sport/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/uniform/",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/uniform/",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/about",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/about",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/accreditation-umalusi",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/accreditation-umalusi",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/admissions",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/admissions",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/blog",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/blog",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/contact",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/contact",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/culture",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/culture",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/extra-curricular",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/extra-curricular",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/facilities",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/facilities",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/fee-structure",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/fee-structure",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/fet",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/fet",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/foundation-phase",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/foundation-phase",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/get",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/get",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/high",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/high",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/important-documents",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/important-documents",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/intermediate-phase",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/intermediate-phase",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/literacy-program",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/literacy-program",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/mathematics-program",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/mathematics-program",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/outings-camps",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/outings-camps",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/parent-testimonials",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/parent-testimonials",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/primary",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/primary",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/school-life",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/school-life",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/senior-phase",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/senior-phase",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/sport",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/sport",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://www.eduplanet.co.za/uniform",
+      "status": 404,
+      "final_url": "https://www.eduplanet.co.za/uniform",
+      "redirects": [],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    },
+    {
+      "requested": "https://eduplanet.co.za/",
+      "status": 200,
+      "final_url": "https://www.eduplanet.co.za/",
+      "redirects": [
+        {
+          "status": 308,
+          "from": "https://eduplanet.co.za/",
+          "to": "https://www.eduplanet.co.za/"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "title": [
+        "Home | EduPlanet"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "description": [
+        "Explore EduPlanet Independent School, our learning phases, admissions and school life in Gqeberha."
+      ],
+      "structured_data": false,
+      "grade_rr": false,
+      "application_pdf": false
+    },
+    {
+      "requested": "http://eduplanet.co.za/",
+      "status": 200,
+      "final_url": "https://www.eduplanet.co.za/",
+      "redirects": [
+        {
+          "status": 308,
+          "from": "http://eduplanet.co.za/",
+          "to": "https://eduplanet.co.za/"
+        },
+        {
+          "status": 308,
+          "from": "https://eduplanet.co.za/",
+          "to": "https://www.eduplanet.co.za/"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "title": [
+        "Home | EduPlanet"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "description": [
+        "Explore EduPlanet Independent School, our learning phases, admissions and school life in Gqeberha."
+      ],
+      "structured_data": false,
+      "grade_rr": false,
+      "application_pdf": false
+    },
+    {
+      "requested": "http://www.eduplanet.co.za/",
+      "status": 200,
+      "final_url": "https://www.eduplanet.co.za/",
+      "redirects": [
+        {
+          "status": 308,
+          "from": "http://www.eduplanet.co.za/",
+          "to": "https://www.eduplanet.co.za/"
+        }
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null,
+      "title": [
+        "Home | EduPlanet"
+      ],
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "description": [
+        "Explore EduPlanet Independent School, our learning phases, admissions and school life in Gqeberha."
+      ],
+      "structured_data": false,
+      "grade_rr": false,
+      "application_pdf": false
+    },
+    {
+      "requested": "https://eduplanet.co.za/wp-content/uploads/2023/08/Eduplanet-Application-Form-2024.pdf",
+      "status": 403,
+      "final_url": "https://www.eduplanet.co.za/wp-content/uploads/2023/08/Eduplanet-Application-Form-2024.pdf",
+      "redirects": [
+        {
+          "status": 308,
+          "from": "https://eduplanet.co.za/wp-content/uploads/2023/08/Eduplanet-Application-Form-2024.pdf",
+          "to": "https://www.eduplanet.co.za/wp-content/uploads/2023/08/Eduplanet-Application-Form-2024.pdf"
+        }
+      ],
+      "content_type": "text/plain; charset=utf-8",
+      "server": "Vercel",
+      "x_robots_tag": null
+    }
+  ]
+}

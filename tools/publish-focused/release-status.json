@@ -1,21 +1,24 @@
 {
-  "status": "Direct Google applications and public grade-fee popups with expandable inclusions; contact gate removed",
+  "status": "UX and SEO improvements prepared locally; awaiting owner commit/push and production deployment",
   "source": "Reviewed focused local preview",
   "pages": 10,
-  "gradeRange": "R–12",
+  "gradeRange": "R\u201312",
   "applicationFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLScvcPgIQBKiv7iKn_6qZiruPIOeQ464HQEsWTzH6ri8QJT2MA/viewform",
   "applicationFormChecked": "Existing live form responded successfully on 20 October 2026",
   "unresolved": [
-    "Scholarship-interest email delivery remains unverified.",
-    "Appointment calendar destination has not been supplied.",
-    "Existing PDF application destination returned HTTP 403.",
-    "Authenticated repository push and production deployment still need verification."
+    "Google Form still needs owner/editor changes, including removal of Grade RR.",
+    "Scholarship-interest inbox delivery remains unverified.",
+    "Booking calendar not supplied; working appointment-request routes are provided.",
+    "Verified results, credentials, parent quotes, phase practical details and reels must be supplied before adding new claims.",
+    "Analytics account not configured.",
+    "The old parent-testimonials route awaits approved parent quotations.",
+    "Confirm the connected Vercel repository/branch, then verify public indexing and redirects after publication."
   ],
   "releaseOptions": [
-    "Activate and verify the temporary email route for both forms.",
-    "Connect the Google Forms later if desired."
+    "Review the local preview, then publish through the existing authorised hosting workflow.",
+    "Connect supplied PDF/calendar URLs later without disabling current email/WhatsApp request routes."
   ],
-  "branch": "codex/reviewed-eduplanet-site",
+  "branch": "main (local uncommitted improvements)",
   "emailActivation": {
     "recipient": "info@eduplanet.co.za",
     "requestedOn": "2026-10-20",
@@ -24,5 +27,22 @@
     "deliveryVerified": false,
     "ownerConfirmedOn": "2026-10-20",
     "latestSetupCheck": "Live browser did not confirm successful submission; setup requests timed out or returned HTTP 403."
+  },
+  "preparedOn": "2026-10-21",
+  "applicationPdfUrl": "https://drive.google.com/file/d/1VNhCtmf2qK9WhQM9tGySzwZwashXaS5p/view?usp=sharing",
+  "applicationPdfChecked": "Opened without sign-in; download and print controls available on 20 October 2026",
+  "seo": {
+    "publicPages": 10,
+    "indexableRelease": true,
+    "uniqueDescriptions": true,
+    "selfCanonicalUrls": true,
+    "schoolStructuredData": true,
+    "sitemap": "sitemap.xml",
+    "robots": "robots.txt",
+    "legacySchoolPagesRedirected": 23,
+    "legacySchoolPagesPending": 1,
+    "totalPermanentRedirects": 27,
+    "oldApplicationPdfRedirect": "Supplied current Google Drive PDF",
+    "liveVerification": "Not performed after deployment; changes remain local"
   }
 }

@@ -91,3 +91,52 @@
 /* Both logo lines share the wordmark's exact left and right edges. */
 .focused-preview .brand__text { width:104px; }
 .focused-preview .brand__sub { display:block; width:104px; height:10px; margin-top:4px; font-family:var(--label); font-size:8px; font-weight:700; letter-spacing:0; fill:currentColor; overflow:visible; }
+
+/* Clear shared actions and quieter, shorter phone layouts. */
+.nav .nav-fees { border:1px solid #ffffff45; margin-left:8px; }
+.footer-action { background:none; border:0; color:inherit; font:inherit; padding:0; cursor:pointer; min-height:44px; text-align:left; }
+.footer-action:hover { color:#fff; text-decoration:underline; text-underline-offset:4px; }
+.specialist-contact { margin-top:20px; color:var(--text-muted); font-size:.92rem; }
+.specialist-contact summary { min-height:44px; display:flex; align-items:center; cursor:pointer; color:var(--brand); font-weight:650; }
+.appointment-section .focused-cta { grid-template-columns:1.4fr 1fr; }
+.appointment-section .focused-cta .lede { color:var(--text-muted); }
+.appointment-section .focused-cta p:last-child { font-size:.9rem; color:var(--text-muted); margin-top:16px; }
+.appointment-section .btn-row { justify-self:end; }
+.focused-preview .btn--on-dark { font-family:inherit; cursor:pointer; }
+.phase-menu-toggle { min-height:44px; min-width:44px; }
+@media(min-width:1041px) and (max-width:1260px) {
+ .header__bar { gap:14px; }
+ .nav a { padding-inline:8px; font-size:.88rem; }
+ .header__cta .icon-link:first-child { display:none; }
+}
+@media(max-width:1040px) {
+ .nav .nav-fees { margin:12px 0 0; padding:13px; text-align:center; }
+ .nav .btn { margin-top:10px; }
+ .nav { overscroll-behavior:contain; }
+}
+@media(max-width:760px) {
+ .appointment-section .focused-cta { grid-template-columns:1fr; }
+ .appointment-section .btn-row { justify-self:start; }
+}
+@media(max-width:480px) {
+ .header__bar { gap:12px; }
+ .header__cta { gap:6px; }
+ .icon-link { width:44px; height:44px; }
+ .brand { gap:9px; }
+ .focused-preview .hero { min-height:0; }
+ .focused-preview .hero__inner { padding-block:44px 100px; }
+ .focused-preview .hero h1 { font-size:clamp(2.1rem,9.1vw,2.75rem); line-height:1.04; }
+ .focused-preview .hero__lede { font-size:1rem; line-height:1.6; }
+ .focused-preview .hero__meta { display:none; }
+ .focused-preview .hero__scroll { bottom:20px; left:var(--gutter); transform:none; align-items:flex-start; }
+ .focused-preview .hero__scroll span { font-size:.6rem; }
+ .focused-preview .hero__scroll svg { height:24px; }
+ .phase-hero h1 { font-size:clamp(2.1rem,8.7vw,2.6rem); max-width:20ch; margin-bottom:18px; }
+ .phase-hero .lede { font-size:1rem; line-height:1.6; }
+ .phase-hero .btn-row { flex-direction:row; align-items:center; gap:12px; }
+ .phase-hero .btn-row .btn { padding:13px 18px; }
+ .phase-hero .btn-row .arrow-link { flex-basis:100%; }
+ .focused-preview .pagehead h1 { font-size:2.25rem; }
+ .focused-cta .btn-row { gap:14px; }
+}
+@media(max-width:359px) { .header__cta .icon-link:first-child { display:none; } }

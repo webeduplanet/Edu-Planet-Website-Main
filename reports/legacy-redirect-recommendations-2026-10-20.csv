@@ -1,0 +1,25 @@
+old_path,checked_status,recommended_destination,recommendation
+/about/,404,about.html,Redirect to the current About page.
+/accreditation-umalusi/,404,academics.html#standards,"Reuse current, verified accreditation information here; check documents before carrying over older claims."
+/admissions/,404,admissions.html,Redirect; connect the application controls as a separate urgent fix.
+/blog/,404,school-life.html,Old menu calls this NEWSLETTER. Recover relevant school news or newsletter downloads; use School Life unless a regularly maintained news page is wanted.
+/contact/,404,contact.html,Redirect to current contact details and directions.
+/culture/,404,school-life.html#creative-learning,Redirect to creative learning; retain useful current cultural activities.
+/extra-curricular/,404,school-life.html,Consolidate into School Life instead of recreating a separate overview.
+/facilities/,404,school-life.html#facilities [PROPOSED SECTION],"Add a short photo-led facilities section before redirecting to this fragment, using the approved current facilities information."
+/fee-structure/,404,admissions.html?view=fees#fees,Redirect to the working grade-based 2027 fee popup.
+/fet/,404,matric.html,Redirect to the Grades 10–12 page.
+/foundation-phase/,404,early-years.html,"Redirect to the Foundation Phase page, now Grades R–3. Keep the working destination filename for continuity."
+/get/,404,academics.html#learning-phases,Use the current phase overview; retain access to the individual phase pages.
+/high/,404,academics.html#learning-phases,Use the phase overview; confirm the old page’s grade coverage before selecting a more specific landing page.
+/important-documents/,404,admissions.html#downloads [PROPOSED SECTION],Restore a compact downloads area with current approved documents before adding this fragment redirect.
+/intermediate-phase/,404,intermediate.html,Redirect to Grades 4–6.
+/literacy-program/,404,academics.html#teaching-support,Reuse relevant current support information. Confirm the old programme still operates before making programme-specific promises.
+/mathematics-program/,404,academics.html#teaching-support,Combine useful current maths support information with teaching support; verify any distinct programme details.
+/outings-camps/,404,school-life.html,Retain current camp and outing information within School Life; avoid old dates and booking details.
+/parent-testimonials/,404,about.html#parent-experiences [PROPOSED SECTION],"Select a few current, approved parent quotes for existing pages rather than recreating a long separate testimonials page."
+/primary/,404,academics.html#learning-phases,Redirect to the phase overview so families can choose Foundation or Intermediate.
+/school-life/,404,school-life.html,Redirect to the current School Life page.
+/senior-phase/,404,senior.html,Redirect to Grades 7–9.
+/sport/,404,school-life.html#sport,Redirect to the existing sport section.
+/uniform/,404,school-life.html#uniform [PROPOSED SECTION],Restore current uniform guidance and supplier/contact details or an approved downloadable guide before linking to this fragment.
