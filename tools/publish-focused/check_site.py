@@ -124,13 +124,12 @@ def check(preview=False):
             descriptions += [attrs.get('content') for tag, attrs in page.nodes if tag == 'meta' and attrs.get('name') == 'description']
             require('class="nav-fees"' in text, f'{name}: shared fee action missing')
             footers.append(re.search(r'<footer\b.*?</footer>', text, re.S)[0])
-    require(len(set(descriptions)) == 10, 'Page descriptions must be distinct')
+    require(len(set(descriptions)) == len(descriptions) == len(pages) - 1, 'Every public page needs a distinct description')
     require(len(set(footers)) == 1, 'Footer must be consistent across all pages')
     sitemap = ET.fromstring((ROOT / 'sitemap.xml').read_text())
-    require(len(sitemap) == 10, 'Sitemap must list the ten public pages')
     sitemap_urls = {node.text for node in sitemap.iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
     canonical_urls = {identity['url'] + ('/' if name == 'index.html' else '/' + name) for name in pages if name != '404.html'}
-    require(sitemap_urls == canonical_urls, 'Sitemap must match the public canonical URLs')
+    require(len(sitemap) == len(canonical_urls) and sitemap_urls == canonical_urls, 'Sitemap must match the public canonical URLs')
     require('Sitemap: ' + identity['url'] + '/sitemap.xml' in (ROOT / 'robots.txt').read_text(), 'robots.txt must identify the sitemap')
     require('Disallow: /\n' in (ROOT / 'robots.txt').read_text() if preview else 'Disallow: /\n' not in (ROOT / 'robots.txt').read_text(), 'robots.txt indexing mode incorrect')
     routes = json.loads((ROOT / 'vercel.json').read_text()).get('redirects', [])
@@ -160,6 +159,10 @@ def check(preview=False):
         require(private + '/' in (ROOT / '.vercelignore').read_text(), f'Vercel must exclude {private}')
         require("--exclude '" + private + "'" in (ROOT / '.github/workflows/pages.yml').read_text(), f'Pages must exclude {private}')
     require('Select your child’s phase.' in texts['academics.html'], 'Owner Academics edit must be preserved')
+    require('careers.html' in pages, 'Careers page is missing')
+    if 'careers.html' in pages:
+        require('https://forms.gle/a4DD8pmWdvr5RhTs8' in pages['careers.html'].links, 'Careers must link to the supplied application form')
+        require('mailto:careers@eduplanet.co.za' in pages['careers.html'].links, 'Careers must offer the CV email address')
     require('formsubmit.co' not in (ROOT / 'enrolment.js').read_text(), 'Retired scholarship email submission code must not ship')
     return errors
 

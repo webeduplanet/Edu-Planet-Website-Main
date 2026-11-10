@@ -140,3 +140,9 @@
  .focused-cta .btn-row { gap:14px; }
 }
 @media(max-width:359px) { .header__cta .icon-link:first-child { display:none; } }
+
+.careers-hero .figure img { aspect-ratio:4/3; }
+#career-application .lede { color:var(--text-muted); }
+@media(min-width:761px) {
+ .career-paths { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}

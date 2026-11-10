@@ -1,6 +1,6 @@
 # EduPlanet website sources and release preparation
 
-The ten-page Grade R–12 website is at the repository root. Its durable editing sources are in `reviewed-source/`. The 20–21 October UX and SEO improvements are prepared locally; no deployment is implied by editing or rebuilding these files.
+The Grade R–12 website is at the repository root. Its durable editing sources are in `reviewed-source/`. The 20–21 October UX and SEO improvements are prepared locally; no deployment is implied by editing or rebuilding these files.
 
 ## Editing
 

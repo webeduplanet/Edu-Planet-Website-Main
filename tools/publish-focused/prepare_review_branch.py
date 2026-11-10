@@ -4,7 +4,7 @@ import shutil,re,json,hashlib,html,argparse
 from PIL import Image
 REPO=Path(__file__).resolve().parents[2]
 SOURCE=Path(__file__).resolve().parent/'reviewed-source'
-PAGES=['index.html','about.html','academics.html','admissions.html','school-life.html','contact.html','early-years.html','intermediate.html','senior.html','matric.html']
+PAGES=['index.html','about.html','academics.html','admissions.html','school-life.html','contact.html','careers.html','early-years.html','intermediate.html','senior.html','matric.html']
 parser=argparse.ArgumentParser()
 parser.add_argument('--preview',action='store_true',help='Exclude review pages from search indexing')
 args=parser.parse_args()
@@ -18,6 +18,7 @@ META={
  'admissions.html':('Admissions & 2027 School Fees | EduPlanet','View EduPlanet’s 2027 fees and included benefits. Apply online, request a school visit and understand the three steps to enrolment.'),
  'school-life.html':('Sport, Activities & School Life | EduPlanet','Discover soccer, netball, creative learning and Christian service at EduPlanet Independent School in Gqeberha.'),
  'contact.html':('Contact & School Visit Bookings | EduPlanet','Book a school visit or contact EduPlanet about applications. Find our phone, WhatsApp, office hours and directions to Struandale, Gqeberha.'),
+ 'careers.html':('Teaching & Administration Careers | EduPlanet','Apply for teaching or administration roles at EduPlanet Independent School in Gqeberha. Apply online or email your CV to the careers team.'),
  'early-years.html':('Foundation Phase, Grades R–3 | EduPlanet','A caring start to school through stories, play, early literacy and numeracy. Explore EduPlanet’s Foundation Phase, support and 2027 fees.'),
  'intermediate.html':('Intermediate Phase, Grades 4–6 | EduPlanet','Explore broader subjects, growing independence and academic support in EduPlanet’s Intermediate Phase. View 2027 fees and apply online.'),
  'senior.html':('Senior Phase, Grades 7–9 | EduPlanet','Explore EduPlanet’s Senior Phase: a broad curriculum, healthy discipline, learner support and guidance towards Grade 10 subject choices.'),
@@ -112,4 +113,4 @@ not_found=re.sub(r'<link rel="canonical"[^>]*>|<meta property="og:url"[^>]*>|<me
 # A missing page can be served at a nested URL; its recovery links/assets must stay at the site root.
 not_found=re.sub(r'\b(href|src)="(?![a-zA-Z][a-zA-Z0-9+.-]*:|/|#)([^"]+)"',lambda m:f'{m[1]}="/{m[2]}"',not_found)
 (REPO/'404.html').write_text(not_found)
-print('Prepared 10 pages, a helpful 404 page and search files. Mode: '+('private review' if args.preview else 'production-ready local files')+'. Nothing has been deployed.')
+print(f'Prepared {len(PAGES)} pages, a helpful 404 page and search files. Mode: '+('private review' if args.preview else 'production-ready local files')+'. Nothing has been deployed.')

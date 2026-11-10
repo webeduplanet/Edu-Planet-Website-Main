@@ -311,12 +311,16 @@
         "label": "Page introduction"
       },
       {
-        "id": "contact-details",
-        "label": "Contact details and office hours"
-      },
-      {
         "id": "contact-visit",
         "label": "Location and visiting"
+      },
+      {
+        "id": "appointment",
+        "label": "Book an appointment"
+      },
+      {
+        "id": "contact-details",
+        "label": "Contact details and office hours"
       },
       {
         "id": "family-questions",
@@ -324,5 +328,24 @@
       }
     ],
     "words": 132
+  },
+  {
+    "file": "careers.html",
+    "label": "Careers",
+    "sections": [
+      {
+        "id": "page-introduction",
+        "label": "Careers introduction"
+      },
+      {
+        "id": "career-paths",
+        "label": "Teaching and administration roles"
+      },
+      {
+        "id": "career-application",
+        "label": "How to apply"
+      }
+    ],
+    "words": 147
   }
 ]

@@ -1,6 +1,6 @@
 # EduPlanet Independent School website
 
-The ten-page Grade R–12 website is at the repository root, with Foundation, Intermediate, Senior and FET phase pages. UX, consistency and SEO improvements from the 20–21 October 2026 reviews are prepared locally for review.
+The Grade R–12 website is at the repository root, with Foundation, Intermediate, Senior and FET phase pages. UX, consistency and SEO improvements from the 20–21 October 2026 reviews are prepared locally for review.
 
 ## Local preview
 
@@ -15,6 +15,7 @@ Open `http://127.0.0.1:8001/`.
 ## Current experience
 
 - Direct Google application links and shared View fees access.
+- Careers page for teaching and administration applications, with a Google Form and a CV email address.
 - Ungated 2027 grade-fee popup with a fixed title/close control and Apply action.
 - Full Admissions benefits plus expandable popup summary; optional aftercare is separated from tuition inclusions.
 - Direct Google Calendar booking links for school visits, with phone, WhatsApp and email available for help.
