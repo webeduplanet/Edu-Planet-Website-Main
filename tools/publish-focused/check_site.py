@@ -48,7 +48,7 @@ def check(preview=False):
             require(target.fragment in pages[name].ids, f'{origin}: missing anchor {link}')
 
     fee_schedule = json.loads((SOURCE / 'enrolment-source/fee-schedule-2027.json').read_text())
-    expected_fees = [f'R{row["amounts"][group]:,}' for group in range(7) for row in fee_schedule['rows']]
+    fee_rows = fee_schedule['rows']
     links = json.loads((SOURCE / 'enrolment-config.json').read_text())['links']
     application = links['APPLICATION_FORM_URL']
     identity = json.loads((SOURCE / 'site-identity.json').read_text())
@@ -79,10 +79,24 @@ def check(preview=False):
             label = re.sub(r'<[^>]+>', '', match[2]).strip()
             if label == 'Apply now':
                 require(f'href="{application}"' in match[1], f'{name}: Apply now must open the Google Form directly')
-        panels = re.findall(r'<dl class="selected-grade-fees".*?</dl>', text, re.S)
         require(sum('data-scholarship-form' in attrs for tag, attrs in page.nodes) == 1, f'{name}: requires one direct scholarship action')
-        amounts = [amount for panel in panels for amount in re.findall(r'<dd>(.*?)</dd>', panel)]
-        require(amounts == expected_fees, f'{name}: supplied fee amounts changed')
+        require(any(attrs.get('id') == 'fee-next-actions' and 'hidden' not in attrs for _, attrs in page.nodes),
+                f'{name}: fee popup actions must be visible before grade selection')
+        discounts = re.search(r'<details\b[^>]*\bid="fee-discounts"[^>]*>(.*?)</details>', text, re.S)
+        require(bool(discounts), f'{name}: missing advance-payment disclosure')
+        if discounts:
+            require('<summary>Pay fees upfront and save!</summary>' in discounts[1],
+                    f'{name}: missing discount summary')
+            require(not any('open' in attrs for _, attrs in page.nodes if attrs.get('id') == 'fee-discounts'),
+                    f'{name}: discounts must start collapsed')
+            require(re.findall(r'<li>(.*?)</li>', discounts[1]) == [row['label'] for row in fee_rows[2:]],
+                    f'{name}: incorrect discount rates before grade selection')
+            for section, rows in [(text[:discounts.start()], fee_rows[:2]), (discounts[1], fee_rows[2:])]:
+                panels = re.findall(r'<dl class="selected-grade-fees" data-fee-group-panel="(\d+)" hidden>(.*?)</dl>', section, re.S)
+                expected = [(str(group), [(row['label'], f'R{row["amounts"][group]:,}') for row in rows])
+                            for group in range(len(fee_schedule['grades']))]
+                actual = [(group, re.findall(r'<dt>(.*?)</dt><dd>(.*?)</dd>', panel)) for group, panel in panels]
+                require(actual == expected, f'{name}: incorrect fee rows or amounts')
         if name != '404.html':
             robots = [attrs.get('content', '') for tag, attrs in page.nodes if tag == 'meta' and attrs.get('name') == 'robots']
             require(any('noindex' in value for value in robots) == preview, f'{name}: indexing mode incorrect')

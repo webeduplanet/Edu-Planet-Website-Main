@@ -25,9 +25,9 @@ Do not run the historical `tools/build_pages.py`; it generates an older website.
 - Full benefits remain visible on Admissions, with a shorter expandable summary in the popup. Stationery and optional aftercare are identified separately.
 - Make an appointment links open the owner-supplied Google Calendar booking page in a new tab. They work directly in HTML, including without JavaScript; `VISIT_CALENDAR_URL` stores the same link. Parents choose a time and complete their booking on Google Calendar. Phone, WhatsApp and email remain available for help.
 - Step 1 links Download the PDF form directly to the owner-supplied Google Drive PDF. The viewer opens in a new tab and offers download and print, including without signing in. `APPLICATION_PDF_URL` stores the same link.
-- Register scholarship interest opens the supplied Google sponsorship form in a new tab. No scholarship contact details are collected or emailed by this website. Response collection and any email notifications are managed in the Google Form. `SCHOLARSHIP_FORM_URL` stores the link.
+- Register interest opens the supplied Google sponsorship form in a new tab. No scholarship contact details are collected or emailed by this website. Response collection and any email notifications are managed in the Google Form. `SCHOLARSHIP_FORM_URL` stores the link.
 
-The application deadline and late-application notice are manually editable in `enrolment-config.json`. The current deadline is 30 October 2026.
+The application deadline and late-application notice are manually editable in `enrolment-config.json`. The current deadline is 30 November 2026.
 
 ## Hosting preparation
 
