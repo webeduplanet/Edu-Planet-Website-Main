@@ -153,18 +153,76 @@
  align-items:center;
  gap:clamp(24px,4vw,56px);
 }
-.reel { width:100%; max-width:15rem; margin:0 auto; }
+.reel {
+ position:relative;
+ width:100%;
+ max-width:15rem;
+ margin:0 auto;
+}
 .reel video {
  display:block;
  width:100%;
  height:auto;
  aspect-ratio:9/16;
- object-fit:contain;
+ object-fit:cover;
  border-radius:8px;
  background:#07203c;
 }
-.reel figcaption { margin-top:8px; font-size:.88rem; text-align:center; }
+.reel figcaption {
+ position:absolute;
+ inset:0 0 auto;
+ padding:12px 12px 24px;
+ border-radius:8px 8px 0 0;
+ background:linear-gradient(rgba(0,0,0,.86),rgba(0,0,0,.72) 65%,transparent);
+ color:#fff;
+ font-size:.88rem;
+ font-weight:700;
+ text-align:center;
+ pointer-events:none;
+}
 #book-appointment .reel-layout { grid-template-columns:minmax(0,1fr) minmax(0,12rem); }
+
+@media(min-width:761px) {
+ .focused-preview :is(#home-belong, #vision-mission, #teaching-support),
+ #book-appointment { padding-block:0; }
+
+ .reel-layout, #teaching-support .split {
+  --reel-width:clamp(15rem, 26vw, 18rem);
+  grid-template-columns:minmax(0,1fr) var(--reel-width);
+ }
+ #book-appointment .reel-layout {
+  --reel-width:clamp(12rem, 22vw, 15rem);
+  grid-template-columns:minmax(0,1fr) var(--reel-width);
+ }
+
+ .reel-layout > :first-child, #teaching-support .split > :first-child {
+  padding-block:clamp(24px, 4vw, 48px);
+ }
+ #book-appointment > .stage-number { margin-top:clamp(24px, 4vw, 48px); }
+ #teaching-support .split__media { display:grid; align-self:stretch; }
+
+ .reel {
+  align-self:stretch;
+  max-width:none;
+  min-height:calc(var(--reel-width) * 16 / 9);
+ }
+ .reel video {
+  position:absolute;
+  inset:0;
+  height:100%;
+  border-radius:0;
+ }
+ .reel figcaption { border-radius:0; }
+}
+
 @media(max-width:760px) {
- .reel-layout, #book-appointment .reel-layout { grid-template-columns:minmax(0,1fr); }
+ .reel-layout { grid-template-columns:minmax(0,1fr); }
+ .reel {
+  width:calc(100% + 2 * var(--gutter));
+  max-width:none;
+  margin-inline:calc(-1 * var(--gutter));
+ }
+ .reel video, .reel figcaption { border-radius:0; }
+ #book-appointment .reel-layout { display:contents; }
+ #book-appointment .reel { grid-column:1 / -1; }
 }
