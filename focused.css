@@ -146,3 +146,25 @@
 @media(min-width:761px) {
  .career-paths { grid-template-columns:repeat(2,minmax(0,1fr)); }
 }
+
+.reel-layout {
+ display:grid;
+ grid-template-columns:minmax(0,1fr) minmax(0,15rem);
+ align-items:center;
+ gap:clamp(24px,4vw,56px);
+}
+.reel { width:100%; max-width:15rem; margin:0 auto; }
+.reel video {
+ display:block;
+ width:100%;
+ height:auto;
+ aspect-ratio:9/16;
+ object-fit:contain;
+ border-radius:8px;
+ background:#07203c;
+}
+.reel figcaption { margin-top:8px; font-size:.88rem; text-align:center; }
+#book-appointment .reel-layout { grid-template-columns:minmax(0,1fr) minmax(0,12rem); }
+@media(max-width:760px) {
+ .reel-layout, #book-appointment .reel-layout { grid-template-columns:minmax(0,1fr); }
+}

@@ -12,6 +12,10 @@
         "label": "Quick benefits"
       },
       {
+        "id": "home-belong",
+        "label": "A place to belong"
+      },
+      {
         "id": "home-learning",
         "label": "Learning and support"
       },

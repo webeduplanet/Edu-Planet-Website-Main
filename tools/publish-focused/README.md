@@ -42,7 +42,7 @@ Reports, tools, original source media and local `output/` and `tmp/` drafts are 
 3. Confirm aftercare hours/charges, phase entry requirements, document checklist, subject combinations and examination-board details before publishing additional specifics.
 4. Supply approved current results, staff credentials, parent testimonials and relevant reels before adding new evidence or claims.
 5. Confirm the sponsorship Google Form’s parent access/sign-in requirements, response destination and desired notifications. Verification stopped at Google sign-in; no form was submitted.
-6. Select/connect an analytics account before measuring completed applications and appointments. No tracking service has been added.
+6. The Meta Pixel measures page views on the school website. Measuring completed applications and appointments requires separate setup on the external form and booking services.
 7. Supply approved parent quotations before restoring or redirecting `/parent-testimonials/`. That one legacy page intentionally remains unresolved; no quotes or ratings have been invented.
 8. Review this local version, publish through the authorised Git/hosting workflow, then test the actual domain. The live site's older application action and indexing settings remain unchanged until deployment.
 

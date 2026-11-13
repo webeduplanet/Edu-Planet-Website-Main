@@ -73,7 +73,10 @@ def check(preview=False):
                 require(tag == 'a' and attrs.get('href') == links['VISIT_CALENDAR_URL'], f'{name}: appointment link must use the supplied booking calendar directly')
                 require(attrs.get('target') == '_blank' and 'noopener' in attrs.get('rel', '').split(), f'{name}: booking must open safely in a new tab')
             if tag == 'img':
-                require(bool(attrs.get('alt')), f'{name}: image alternative missing')
+                require(bool(attrs.get('alt')) or (
+                    attrs.get('alt') == '' and attrs.get('src', '').startswith('https://www.facebook.com/tr?')
+                    and attrs.get('width') == attrs.get('height') == '1'
+                ), f'{name}: image alternative missing')
                 require('width' in attrs and 'height' in attrs, f'{name}: image dimensions missing')
         for match in re.finditer(r'<a\b([^>]*)>(.*?)</a>', text, re.S):
             label = re.sub(r'<[^>]+>', '', match[2]).strip()

@@ -41,4 +41,4 @@ The generator requires Python 3 and Pillow. `--preview` produces explicitly non-
 
 ## External connections
 
-Fees collect no contact details. Scholarship interest links directly to the supplied sponsorship Google Form; the former website email popup has been removed. Google Form access, responses and notifications are controlled by its owner. No secret credentials or analytics service have been added. The owner-supplied application PDF is linked from Admissions. The supplied school-visit booking calendar is connected. Google Form editing, verified evidence and a live deployment check remain separate owner/account tasks.
+Fees collect no contact details. Scholarship interest links directly to the supplied sponsorship Google Form; the former website email popup has been removed. Google Form access, responses and notifications are controlled by its owner. The Meta Pixel sends a PageView event on each page. The owner-supplied application PDF is linked from Admissions. The supplied school-visit booking calendar is connected. Google Form editing, verified evidence and a live deployment check remain separate owner/account tasks.

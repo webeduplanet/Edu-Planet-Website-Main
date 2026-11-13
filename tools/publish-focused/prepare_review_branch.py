@@ -52,6 +52,8 @@ def structured_data(file,title,description,url):
  return json.dumps({'@context':'https://schema.org','@graph':graph},ensure_ascii=False).replace('<','\\u003c')
 dialogs=(SOURCE/'enrolment-source/fee-dialogs.html').read_text().strip()
 footer=(SOURCE/'shared-footer.html').read_text().strip()
+pixel_head=(SOURCE/'meta-pixel-head.html').read_text()
+pixel_body=(SOURCE/'meta-pixel-body.html').read_text()
 cache_files=['focused.css','focused.js','preview.css','preview.js','enrolment.css','enrolment.js']
 for file in PAGES:
  text=(SOURCE/file).read_text()
@@ -72,7 +74,8 @@ for file in PAGES:
  tags=f'<link rel="canonical" href="{url}">\n<meta property="og:url" content="{url}">\n<meta property="og:image" content="{ORIGIN}/assets/img/hero-poster.jpg">'
  if args.preview:tags+='\n<meta name="robots" content="noindex, nofollow">'
  tags+='\n<script type="application/ld+json">'+structured_data(file,title,description,url)+'</script>'
- text=text.replace('</head>',tags+'\n</head>')
+ text=text.replace('</head>',tags+'\n'+pixel_head+'</head>')
+ text=re.sub(r'<body\b[^>]*>',lambda match:match[0]+'\n'+pixel_body.rstrip('\n'),text,count=1)
  text=text.replace('<!-- DEPLOY STEP: replace with the live absolute URLs once the domain is live -->','')
  # Use the preferred home address in navigation, keeping /index.html as an old URL only.
  text=re.sub(r'\bhref="/?index\.html([?#][^"]*)?"',lambda m:'href="/'+(m[1] or '')+'"',text)
