@@ -27,7 +27,7 @@ setTimeout(function () {
      block rendering or to fail on a filtered network. -->
 <link rel="preload" href="assets/fonts/figtree-variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/styles.css?v=35b95e7e6d">
-<link rel="stylesheet" href="preview.css?v=253f804f46"><link rel="stylesheet" href="focused.css?v=6088e7bc68"><link rel="stylesheet" href="enrolment.css?v=9d43fcf92a"><link rel="canonical" href="https://www.eduplanet.co.za/careers.html">
+<link rel="stylesheet" href="preview.css?v=253f804f46"><link rel="stylesheet" href="focused.css?v=896fc9d4fa"><link rel="stylesheet" href="enrolment.css?v=9d43fcf92a"><link rel="canonical" href="https://www.eduplanet.co.za/careers.html">
 <meta property="og:url" content="https://www.eduplanet.co.za/careers.html">
 <meta property="og:image" content="https://www.eduplanet.co.za/assets/img/hero-poster.jpg">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "School", "@id": "https://www.eduplanet.co.za/#school", "name": "EduPlanet Independent School", "url": "https://www.eduplanet.co.za/", "description": "A Christian independent school in Struandale, Gqeberha, offering Grade R to Grade 12.", "logo": "https://www.eduplanet.co.za/assets/img/eduplanet-mark.svg", "telephone": "+27414511046", "email": "info@eduplanet.co.za", "address": {"@type": "PostalAddress", "streetAddress": "1 Eveready Road, Struandale", "addressLocality": "Gqeberha", "addressRegion": "Eastern Cape", "postalCode": "6200", "addressCountry": "ZA"}, "foundingDate": "2016", "identifier": {"@type": "PropertyValue", "propertyID": "DBE EMIS", "value": "200100266"}, "contactPoint": {"@type": "ContactPoint", "contactType": "Admissions and accounts", "telephone": "+27414511046", "email": "accounts@eduplanet.co.za"}}, {"@type": "WebSite", "@id": "https://www.eduplanet.co.za/#website", "url": "https://www.eduplanet.co.za/", "name": "EduPlanet Independent School", "publisher": {"@id": "https://www.eduplanet.co.za/#school"}, "inLanguage": "en-ZA"}, {"@type": "WebPage", "@id": "https://www.eduplanet.co.za/careers.html#webpage", "url": "https://www.eduplanet.co.za/careers.html", "name": "Teaching & Administration Careers | EduPlanet", "description": "Apply for teaching or administration roles at EduPlanet Independent School in Gqeberha. Apply online or email your CV to the careers team.", "inLanguage": "en-ZA", "isPartOf": {"@id": "https://www.eduplanet.co.za/#website"}, "about": {"@id": "https://www.eduplanet.co.za/#school"}, "breadcrumb": {"@id": "https://www.eduplanet.co.za/careers.html#breadcrumb"}}, {"@type": "BreadcrumbList", "@id": "https://www.eduplanet.co.za/careers.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.eduplanet.co.za/"}, {"@type": "ListItem", "position": 2, "name": "Teaching & Administration Careers", "item": "https://www.eduplanet.co.za/careers.html"}]}]}</script>
@@ -149,11 +149,24 @@ m301 -153 c58 -22 74 -119 28 -171 -24 -27 -36 -32 -95 -36 l-67 -6 0 112 0
           <a class="btn btn--primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2kMxPLGc7vA1zWsUM1-nCpdlzMSrQNzAqFYWPVHoqf1olCKvnzEsYSwFfYcBvQynNSMUsVYrxK" target="_blank" rel="noopener">Book an interview</a>
           <a class="btn btn--ghost" href="mailto:careers@eduplanet.co.za">Email your CV</a>
         </div>
+        <p class="career-booking-note">We recommend applying before booking an interview.</p>
         <p class="career-address">Address: <a href="contact.html#contact-visit">1 Eveready Road, Struandale, Gqeberha</a></p>
       </div>
-      <figure class="figure figure--wide">
-        <img src="photos/EPss-11.jpg" alt="An EduPlanet teacher helping a learner with written work" fetchpriority="high" width="1024" height="683">
+      <figure class="careers-hero__video">
+        <video controls playsinline preload="none" width="720" height="1280" poster="assets/video/reels/learners-finding-purpose.jpg" aria-labelledby="career-video-title">
+          <source src="assets/video/reels/learners-finding-purpose.mp4" type="video/mp4">
+          <a href="assets/video/reels/learners-finding-purpose.mp4">Watch Helping Learners Find Purpose!</a>
+        </video>
+        <figcaption id="career-video-title">Helping Learners Find Purpose!</figcaption>
       </figure>
+    </div>
+  </section>
+
+  <section class="band band--paper compact-band career-mission" id="career-mission" data-review-section="Share our purpose" aria-labelledby="career-mission-title">
+    <div class="wrap">
+      <h2 id="career-mission-title">Share our purpose.</h2>
+      <p>Help build a joyful, Christ-centred learning community where every learner belongs, grows and is equipped to make a difference.</p>
+      <a href="about.html#vision-mission">Explore our mission, vision and values</a>
     </div>
   </section>
 
@@ -161,6 +174,10 @@ m301 -153 c58 -22 74 -119 28 -171 -24 -27 -36 -32 -95 -36 l-67 -6 0 112 0
     <div class="wrap">
       <p class="eyebrow">Areas of work</p>
       <h2 id="career-paths-title">Teaching and administration</h2>
+      <div class="career-openings">
+        <button type="button" class="btn btn--ghost" data-open-dialog="career-vacancies" aria-haspopup="dialog" aria-controls="career-vacancies">Current vacancies</button>
+        <p>We also welcome general applications for teaching and administration roles.</p>
+      </div>
       <div class="benefit-columns career-paths">
         <div>
           <h3>Teaching</h3>
@@ -174,29 +191,13 @@ m301 -153 c58 -22 74 -119 28 -171 -24 -27 -36 -32 -95 -36 l-67 -6 0 112 0
     </div>
   </section>
 
-  <section class="band band--tint" id="career-purpose" data-review-section="Preparation for life" aria-labelledby="career-purpose-title">
-    <div class="wrap reel-layout">
-      <div>
-        <p class="eyebrow">Make a difference</p>
-        <h2 id="career-purpose-title">Preparation for life.</h2>
-        <p class="lede">Discover EduPlanet’s approach to preparing learners for life, and the purpose behind our work as a school.</p>
-      </div>
-      <figure class="reel">
-        <video controls playsinline preload="none" width="720" height="1280" poster="assets/video/reels/preparation-for-life.jpg" aria-labelledby="career-video-title">
-          <source src="assets/video/reels/preparation-for-life.mp4" type="video/mp4">
-          <a href="assets/video/reels/preparation-for-life.mp4">Watch Preparation for Life!</a>
-        </video>
-        <figcaption id="career-video-title">Preparation for Life!</figcaption>
-      </figure>
-    </div>
-  </section>
-
   <section class="band band--tint" id="career-application" data-review-section="How to apply" aria-labelledby="career-application-title">
     <div class="wrap">
       <div class="focused-cta">
         <div>
           <h2 id="career-application-title">How to apply</h2>
           <p class="lede">Use our online application form or send your CV to <a href="mailto:careers@eduplanet.co.za">careers@eduplanet.co.za</a>. If you email us, include the type of role you’re applying for in the subject line.</p>
+          <p class="career-booking-note">We recommend applying before booking an interview.</p>
         </div>
         <div class="btn-row">
           <a class="btn btn--primary" href="https://forms.gle/a4DD8pmWdvr5RhTs8">Apply for a position</a>
@@ -205,6 +206,24 @@ m301 -153 c58 -22 74 -119 28 -171 -24 -27 -36 -32 -95 -36 l-67 -6 0 112 0
       </div>
     </div>
   </section>
+  <dialog class="preview-dialog career-vacancies" id="career-vacancies" aria-labelledby="career-vacancies-title">
+    <div class="preview-dialog__top">
+      <p class="eyebrow">Join our team</p>
+      <button type="button" data-close-dialog aria-label="Close current vacancies" autofocus>×</button>
+    </div>
+    <h2 id="career-vacancies-title">Current vacancies</h2>
+    <ul class="career-vacancies__list">
+      <li><strong>Maths</strong><span>Senior Phase (SP)</span></li>
+      <li><strong>Maths</strong><span>FET Phase</span></li>
+      <li><strong>Physics</strong><span>FET Phase</span></li>
+      <li><strong>isiXhosa</strong><span>Senior &amp; FET Phases</span></li>
+      <li><strong>EMS</strong><span>Senior Phase (SP)</span></li>
+      <li><strong>CAT</strong><span>FET Phase</span></li>
+    </ul>
+    <p>We also welcome general applications for teaching and administration roles.</p>
+    <p class="career-booking-note">We recommend applying before booking an interview.</p>
+    <a class="btn btn--primary" href="https://forms.gle/a4DD8pmWdvr5RhTs8">Apply for a position</a>
+  </dialog>
 <dialog class="preview-dialog fees-dialog fees-dialog--schedule" id="fees-dialog" aria-labelledby="fees-dialog-title">
  <div class="fees-dialog__header"><div class="preview-dialog__top"><p class="eyebrow">Plan your child’s next step</p><button type="button" data-close-dialog aria-label="Close fees">×</button></div>
  <h2 id="fees-dialog-title">2027 school fees</h2></div>

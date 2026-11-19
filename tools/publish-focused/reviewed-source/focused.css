@@ -141,13 +141,57 @@
 }
 @media(max-width:359px) { .header__cta .icon-link:first-child { display:none; } }
 
-.careers-hero .figure img { aspect-ratio:4/3; }
+.careers-hero__video {
+ width:100%;
+ max-width:20rem;
+ margin:0 auto;
+}
+.careers-hero__video video {
+ display:block;
+ width:100%;
+ height:auto;
+ aspect-ratio:9/16;
+ border-radius:8px;
+ background:var(--navy);
+}
+.careers-hero__video figcaption {
+ margin-top:10px;
+ font-size:.875rem;
+ text-align:center;
+ color:var(--text-muted);
+}
 .careers-hero .career-address {
  margin:24px 0 0;
  font-size:.875rem;
  line-height:1.6;
  color:var(--text-muted);
 }
+.career-booking-note {
+ margin:16px 0 0;
+ font-size:.875rem;
+ color:var(--text-muted);
+}
+.career-mission { border-bottom:1px solid var(--hairline); }
+.career-mission p { max-width:70ch; }
+.career-openings {
+ display:flex;
+ flex-wrap:wrap;
+ align-items:center;
+ gap:16px 24px;
+ margin-top:24px;
+}
+.career-openings p { flex:1 1 18rem; margin:0; color:var(--text-muted); }
+.career-vacancies__list { list-style:none; padding:0; margin:24px 0; }
+.career-vacancies__list li {
+ display:flex;
+ flex-wrap:wrap;
+ justify-content:space-between;
+ gap:4px 20px;
+ padding:12px 0;
+ border-bottom:1px solid var(--hairline);
+}
+.career-vacancies__list span { color:var(--text-muted); }
+.career-vacancies > .btn { margin-top:24px; }
 #career-application .lede { color:var(--text-muted); }
 @media(min-width:761px) {
  .career-paths { grid-template-columns:repeat(2,minmax(0,1fr)); }

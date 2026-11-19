@@ -57,6 +57,9 @@ pixel_body=(SOURCE/'meta-pixel-body.html').read_text()
 cache_files=['focused.css','focused.js','preview.css','preview.js','enrolment.css','enrolment.js']
 for file in PAGES:
  text=(SOURCE/file).read_text()
+ # Editing templates can forward local previews; public pages need no redirect.
+ text=re.sub(r'<script\b[^>]*\bdata-source-preview\b[^>]*>.*?</script>\s*','',text,flags=re.S)
+ text=text.replace('<!-- This editing template is not a standalone website preview. -->\n','')
  text=re.sub(r'<dialog\b[^>]*\bid="(?:fees-dialog|scholarship-dialog)".*?</dialog>','',text,flags=re.S)
  text=text.replace('</main>',dialogs+'\n</main>',1)
  text=text.replace('/focused/','/')
