@@ -96,6 +96,9 @@ for file in PAGES:
      tag=tag[:-1]+f' width="{image.width}" height="{image.height}">'
   return tag
  text=re.sub(r'<img\b[^>]*>',dimensions,text)
+ # Keep theme, scripts and media available when a root page is opened from disk.
+ # These document-relative paths resolve to the same assets on the public site.
+ text=re.sub(r'\b(href|src|poster)="/assets/',r'\1="assets/',text)
  (REPO/file).write_text(text)
 for file in ['focused.css','focused.js','preview.css','preview.js','enrolment.css','enrolment.js','enrolment-config.json','page-manifest.json']:
  shutil.copy2(SOURCE/file,REPO/file)
